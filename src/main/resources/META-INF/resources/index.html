@@ -14,6 +14,7 @@
         .hero { background: linear-gradient(to bottom, #1e1e1e, #0a0e17); min-height: 60vh; }
         .accent-purple { color: #a020f0; }
         .accent-red { color: #ff0000; }
+        .accent-white { color: #ffffff; }
         .card { background-color: #1e1e1e; border: none; transition: transform 0.3s, box-shadow 0.3s; }
         .card:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(160, 32, 240, 0.5); }
         .card-img-top { height: 200px; object-fit: cover; border-radius: 10px 10px 0 0; }
@@ -24,22 +25,68 @@
 <body>
 
     <!-- 헤더 (Navbar) -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">League of Legends</a>
+            <a class="navbar-brand" href="#">"League of Legends"</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">뉴스</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">챔피언</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">다운로드</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">로그인</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/news/"target="_blank">뉴스</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/champions/"target="_blank">챔피언</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/download/"target="_blank">다운로드</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://authenticate.riotgames.com/?client_id=prod-xsso-leagueoflegends&code_challenge=fR5mndk52hnQWxPEc_Hdcv4TPnFEudRnvW0phwVzzK0&method=riot_identity&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-leagueoflegends%26code_challenge%3DfR5mndk52hnQWxPEc_Hdcv4TPnFEudRnvW0phwVzzK0%26code_challenge_method%3DS256%26locale%3Dko_KR%26redirect_uri%3Dhttps%253A%252F%252Fxsso.leagueoflegends.com%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%2520offline_access%26state%3De1c1ddab7f4dfb692a6ece81cd%26uri%3Dhttps%253A%252F%252Fleagueoflegends.com%252Fko-kr&security_profile=low"target="_blank">로그인</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://lol.ps/"target="_blank">외부사이트</a></li>  
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+<div class="container-fluid">
+
+  <a class="navbar-brand" href="#">League of Legends</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="https://www.leagueoflegends.com/ko-kr/news/"target="_blank">뉴스↗</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/champions/"target="_blank">챔피언↗</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/download/"target="_blank">다운로드↗</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          외부사이트
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://lol.ps/"target="_blank">프로관전러</a></li>
+          <li><a class="dropdown-item" href="https://op.gg/ko"target=>OP.GG</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          계정
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://signup.kr.riotgames.com/"target="_blank">회원가입</a></li>
+          <li><a class="dropdown-item" href="https://authenticate.riotgames.com/?client_id=prod-xsso-leagueoflegends&code_challenge=efZ3sh1bt7gSGTq3-5rshy9N-6exB7SZY7YWNS_QCTs&method=riot_identity&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-leagueoflegends%26code_challenge%3DefZ3sh1bt7gSGTq3-5rshy9N-6exB7SZY7YWNS_QCTs%26code_challenge_method%3DS256%26locale%3Dko_KR%26redirect_uri%3Dhttps%253A%252F%252Fxsso.leagueoflegends.com%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%2520offline_access%26state%3Da89fc27d496aeb6fd1b321f5cc%26uri%3Dhttps%253A%252F%252Fleagueoflegends.com%252Fko-kr&security_profile=low"target="_blank">로그인</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+</nav>
 
     <!-- 히어로 배너 (Hero Banner) -->
     <section class="hero d-flex align-items-center justify-content-center text-center py-5">
@@ -56,64 +103,109 @@
     <section class="container my-5">
         <h2 class="text-center mb-4 accent-purple">챔피언 선택</h2>
         <p class="text-center mb-5">전투에 뛰어들기, 팀 지원, 또는 그 중간? 당신의 스타일을 선택하세요.</p>
-        <div class="row g-4">
-            <!-- Aatrox -->
+        <div class="row row-cols-auto g-4"> 
+            <!-- irelia -->
+            <!-- <div class="col-md-6 col-lg-4 col-xl-2">
+                <div class="card text-center h-100">
+                    <img src="image/irelia.png" class="card-img-top" alt="Irelia" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="card-title accent-red">Irelia (탑)</h5>
+                        <p class="card-text accent-white">최초의 땅, 아이오니아를 위하여!</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col">
+<div class="card bg-dark text-white border-secondary h-100">
+<img src="image/irelia.png" class="card-img-top" alt="이렐리아">
+<div class="card-body">
+<h5 class="card-title">이렐리아 (Irelia)</h5>
+<p class="card-text small">역할: 전사 / 난이도: 상</p>
+</div>
+<div class="card-footer bg-transparent border-0">
+<button class="btn btn-outline-light w-100"
+data-bs-toggle="modal"
+data-bs-target="#modalIrelia"
+data-champ="Irelia">
+상세 보기
+</button>
+</div>
+</div>
+</div>
+
+<!-- 모달 (iframe으로 Aatrox.html 불러오기) -->
+<div class="modal fade" id="modalAatrox" tabindex="-1" aria-labelledby="modalAatroxLabel" aria-hidden="true">
+<div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+<div class="modal-content bg-dark text-white border-secondary">
+<!-- 헤더 -->
+<div class="modal-header border-secondary">
+<h5 class="modal-title" id="modalAatroxLabel">아트록스 (Aatrox) 상세 정보</h5>
+<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+
+<!-- 바디: iframe으로 내용 채움 -->
+<div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
+<iframe
+src="modals/Aatrox.html"
+frameborder="0"
+style="width: 100%; height: 100%; border: none;"
+allowfullscreen>
+</iframe>
+</div>
+<!-- 푸터 -->
+<div class="modal-footer border-secondary">
+<button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
+</div>
+</div>
+</div>
+</div>
+
+            <!-- xin zhao -->
             <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Aatrox.png" class="card-img-top" alt="Aatrox" loading="lazy">
+                    <img src="image/xin zhao.png" class="card-img-top" alt="Xin zhao" loading="lazy">
                     <div class="card-body">
-                        <h5 class="card-title accent-red">Aatrox (탑)</h5>
-                        <p class="card-text">어둠의 검으로 적을 베세요.</p>
+                        <h5 class="card-title accent-purple">Xin zhao (정글)</h5>
+                        <p class="card-text accent-white">창 한 자루로 천 번의 전투를 치렀지!</p>
                     </div>
                 </div>
             </div>
-            <!-- Sylas -->
+            <!-- yasuo -->
             <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Sylas.png" class="card-img-top" alt="Sylas" loading="lazy">
+                    <img src="image/yasuo.png" class="card-img-top" alt="yasuo" loading="lazy">
                     <div class="card-body">
-                        <h5 class="card-title accent-purple">Sylas (정글/미드)</h5>
-                        <p class="card-text">궁극기를 훔치세요!</p>
+                        <h5 class="card-title accent-red">Yasuo (미드)</h5>
+                        <p class="card-text accent-white">죽음은 바람과 같지. 늘 내 곁에 있으니.</p>
                     </div>
                 </div>
             </div>
-            <!-- Anivia -->
+            <!-- yunara -->
             <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Anivia.png" class="card-img-top" alt="Anivia" loading="lazy">
+                    <img src="image/yunara.png" class="card-img-top" alt="yunara" loading="lazy">
                     <div class="card-body">
-                        <h5 class="card-title accent-red">Anivia (미드)</h5>
-                        <p class="card-text">얼음으로 적을 봉인하세요.</p>
+                        <h5 class="card-title accent-purple">Yunara (원딜)</h5>
+                        <p class="card-text accent-white">가지치기할 시간이군.</p>
                     </div>
                 </div>
             </div>
-            <!-- Briar -->
+            <!-- karma -->
             <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Briar.png" class="card-img-top" alt="Briar" loading="lazy">
+                    <img src="image/karma.png" class="card-img-top" alt="karma" loading="lazy">
                     <div class="card-body">
-                        <h5 class="card-title accent-purple">Briar (정글)</h5>
-                        <p class="card-text">광폭한 힘으로 돌진!</p>
+                        <h5 class="card-title accent-red">Karma (서포터)</h5>
+                        <p class="card-text accent-white">항상 정신을 집중하세요.</p>
                     </div>
                 </div>
             </div>
-            <!-- Jax -->
+            <!-- poro -->
             <div class="col-md-6 col-lg-4 col-xl-2">
                 <div class="card text-center h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jax.png" class="card-img-top" alt="Jax" loading="lazy">
+                    <img src="image/poro.png" class="card-img-top" alt="poro" loading="lazy">
                     <div class="card-body">
-                        <h5 class="card-title accent-red">Jax (탑)</h5>
-                        <p class="card-text">대장간의 주인!</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Jinx -->
-            <div class="col-md-6 col-lg-4 col-xl-2">
-                <div class="card text-center h-100">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jinx.png" class="card-img-top" alt="Jinx" loading="lazy">
-                    <div class="card-body">
-                        <h5 class="card-title accent-purple">Jinx (원딜)</h5>
-                        <p class="card-text">폭발로 적을 날려버리세요.</p>
+                        <h5 class="card-title accent-purple">Poro (펫)</h5>
+                        <p class="card-text accent-white">❤️</p>
                     </div>
                 </div>
             </div>
@@ -127,8 +219,8 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">새로운 챔피언 출시</h5>
-                        <p class="card-text">2026 루나 레벨 이벤트!</p>
+                        <h5 class="card-title accent-white">새로운 챔피언 출시</h5>
+                        <p class="card-text accent-white">2026 루나 레벨 이벤트!</p>
                         <a href="#" class="btn btn-outline-primary">더 보기</a>
                     </div>
                 </div>
@@ -136,8 +228,8 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">패치 노트</h5>
-                        <p class="card-text">밸런스 업데이트.</p>
+                        <h5 class="card-title accent-white">패치 노트</h5>
+                        <p class="card-text accent-white">밸런스 업데이트.</p>
                         <a href="#" class="btn btn-outline-primary">더 보기</a>
                     </div>
                 </div>
@@ -147,3 +239,4 @@
     
 </body>
 </html>
+
