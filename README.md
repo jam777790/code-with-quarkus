@@ -10,13 +10,14 @@
 </div>
 <br>
 
+
 ## 4주차 수업 내용
 
 실습 1 : 부트스트랩 이해/활용하기 (챔피언 추가, 하이퍼링크, 네비 바)
 실습 2 : 모달창 구현하기
 <div aligh="center">
-    <img src="C:\Users\LHH\Desktop\code-with-quarkus\code-with-quarkus\target\image\스크린샷 2026-03-25 142511.png" width="45%" alt="실습 1 화면">
-    <img src="C:\Users\LHH\Desktop\스크린샷 2026-03-25 142527.png" width="45%" alt="실습 2 화면">
-
+    <img width="1885" height="692" alt="스크린샷 2026-03-25 142511" src="https://github.com/user-attachments/assets/ae5f8128-a7bc-4670-a18a-1b25d93f673e" />
+    <img width="1896" height="821" alt="스크린샷 2026-03-25 142527" src="https://github.com/user-attachments/assets/40a07071-1077-4b21-b20d-7760a5a7aaf9" />
 </div>
+
 <br>
