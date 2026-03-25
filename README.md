@@ -15,8 +15,10 @@
 실습 1 : 부트스트랩 이해/활용하기 (챔피언 추가, 하이퍼링크, 네비 바)
 실습 2 : 모달창 구현하기
 <div aligh="center">
-    <img src="C:\Users\LHH\Desktop\사진\스크린샷 2026-03-25 142511.png">
+    <img src="[def]">
     <img src="C:\Users\LHH\Desktop\스크린샷 2026-03-25 142527.png" width="45%" alt="실습 2 화면">
 
 </div>
 <br>
+
+[def]: :\Users\LHH\Desktop\사진\스크린샷 2026-03-25 142511.png
