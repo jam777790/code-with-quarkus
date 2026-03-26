@@ -2,9 +2,8 @@
 
 ## 3주차 수업 내용
 
-실습 1 : quarkus 개발 환경 구축
-content.replace("\n", "\n\n")
-실습 2 : LOL 메인화면 페이지 만들기\n
+#실습 1 : quarkus 개발 환경 구축
+#실습 2 : LOL 메인화면 페이지 만들기\n
 <div aligh="center">
     <img width="1892" height="695" alt="스크린샷 2026-03-18 183236" src="https://github.com/user-attachments/assets/70ff833a-5cb7-4618-ad88-42113963f3e2" />
 <img width="1897" height="798" alt="스크린샷 2026-03-18 160832" src="https://github.com/user-attachments/assets/f70c7964-5cd2-4994-a6cf-e2be2c7f7234" />
