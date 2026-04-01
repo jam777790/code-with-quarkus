@@ -1,25 +1,93 @@
-<!-- 모달 (iframe으로 Aatrox.html 불러오기) -->
-<div class="modal fade" id="modalAatrox" tabindex="-1" aria-labelledby="modalAatroxLabel" aria-hidden="true">
-<div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-<div class="modal-content bg-dark text-white border-secondary">
-<!-- 헤더 -->
-<div class="modal-header border-secondary">
-<h5 class="modal-title" id="modalAatroxLabel">아트록스 (Aatrox) 상세 정보</h5>
-<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-</div>
-<!-- 바디: iframe으로 내용 채움 -->
-<div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-<iframe
-src="modals/Irelia.html"
-frameborder="0"
-style="width: 100%; height: 100%; border: none;"
-allowfullscreen>
-</iframe>
-</div>
-<!-- 푸터 -->
-<div class="modal-footer border-secondary">
-<button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-</div>
-</div>
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이렐리아 상세</title>
+  
+  <!-- Bootstrap 5 CSS (index.html과 동일하게 연동) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- LOL 스타일 맞추기 위한 간단 커스텀 (필요 시 resources/css/custom.css로 이동) -->
+  <style>
+    body {
+      background-color: #0a0e17;
+      color: white;
+      padding: 1.5rem;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    h3, h4 {
+      color: #c8aa6e; /* LOL 골드 톤 */
+    }
+    .text-muted {
+      color: #a0a0a0 !important;
+    }
+    .list-group-item {
+      background: transparent;
+      border-color: #444;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row g-4">
+      
+      <!-- 왼쪽: 이미지 + 기본 정보 -->
+      <div class="col-lg-5 text-center">
+        <img src="../image/irelia.png" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 480px; object-fit: contain;">
+        <div class="mt-3">
+          <h3 class="mb-1">이렐리아 (Irelia)</h3>
+          <p class="text-muted fs-5">전사 / 난이도: 상</p>
+        </div>
+      </div>
+      
+      <!-- 오른쪽: 스킬 + 스토리 -->
+      <div class="col-lg-7">
+        <h4 class="border-bottom border-secondary pb-2 mb-3">스킬</h4>
+        <ul class="list-group list-group-flush mb-4">
+          <li class="list-group-item"><img src="../image/이렐리아 패시브.webp" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 100px; object-fit: contain;">  
+            패시브 : 아이오니아의 열정</li>
+            <li class="list-group-item">
+              이렐리아가 스킬로 적을 맞히면 6초 동안 중첩을 1 얻습니다.
+              (최대 4중첩) 이렐리아가 중첩당 공격 속도를 얻으며 최대 중첩 시 기본 공격으로 추가 마법 피해를 입힙니다.
+              챔피언이나 구조물, 대형 몬스터 공격 시 중첩 지속 시간이 초기화됩니다. 챔피언을 맞히거나 챔피언이 아닌 적을 하나라도 맞힐 때마다 1중첩을 얻습니다.</li>
+          <li class="list-group-item"><img src="../image/이렐리아 Q.webp" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 100px; object-fit: contain;">
+              Q : 칼날 쇄도</li>
+              <li class="list-gruop-item">
+               이렐리아가 적에게 돌진해 물리 피해를 입히고 체력을 회복합니다. 적이 죽거나 불안정 상태일 경우 재사용 대기시간이 초기화됩니다.</li>
+          <li class="list-group-item"><img src="../image/이렐리아 W.webp" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 100px; object-fit: contain;">
+              W : 저항의 춤</li>
+              <li class="list-group-item">
+                충전 시작 시: 이렐리아가 최대 1.5초 동안 방어 태세에 돌입하여 행동할 수 없게 되지만 받는 물리 피해, 마법 피해가 감소합니다.
+                발사 시: 이렐리아가 검을 날려 물리 피해를 입힙니다. 피해량은 충전 시간에 비례하여 최대 3배만큼 증가합니다.
+              </li>
+          <li class="list-group-item"><img src="../image/이렐리아 E.webp" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 100px; object-fit: contain;">
+              E : 쌍검협무</li>
+              <li class="list-group-item">
+                이렐리아가 지면에 검을 던집니다. 3.5초 내에 스킬을 재사용할 수 있습니다.</li>
+          <li class="list-group-item"><img src="../image/이렐리아 R.webp" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 100px; object-fit: contain;">
+              R : 선봉진격검</li>
+              <li class="list-group-item">
+                이렐리아가 칼날 다발을 날려 마법 피해를 입히고 챔피언 및 대형 정글 몬스터를 5초 동안 불안정 상태로 만듭니다.
+                칼날 다발은 결계 형태로 폭발하여 2.5초 동안 첫 번째 적중한 챔피언을 둘러쌉니다.
+                결계는 동일한 양의 마법 피해를 입히고 적을 1.5초 동안 90% 둔화시킵니다.
+              </li>
+        </ul>
+
+        <h4 class="border-bottom border-secondary pb-2 mb-3">배경 스토리 요약</h4>
+        <p class="text-secondary lh-lg">
+           녹서스에게 침략당한 후 아이오니아에서는 수많은 영웅이 등장했지만, 나보리 출신의 젊은 이렐리아만큼 독특한 영웅은 없다.
+           이렐리아는 고향 나보리에 전해 내려오는 고대의 춤을 익혔고, 아이오니아가 침략당하자 그 능력을 전쟁터에서의 기술로 삼았다. 
+           치명적인 위력의 칼날들을 공중에 띄우고 자유자재로 조종하며 싸우는 그녀의 모습은 우아하고 신중하며 군더더기라고는 없었다. 
+           훌륭한 투사임을 입증한 이렐리아는 원하는 바는 아니었으나 아이오니아 저항 세력을 선두에서 이끄는 역할을 맡게 되었고, 
+           지금까지도 고향 땅을 지키고 보존하는 일에 헌신하고 있다.
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>
