@@ -35,8 +35,8 @@
 실습 2 : 다운로드 페이지 구현하기(다운로드 파일 생성)
 
 <div aligh="center">
-    <img width="1885" height="692" alt="스크린샷 2026-03-25 142511" src="" />
-    <img width="1896" height="821" alt="스크린샷 2026-03-25 142527" src="" />
-    <img width="1905" height="1066" alt="스크린샷 2026-03-25 193135" src="" />
+    <img width="1904" height="1067" alt="스크린샷 2026-04-01 140643" src="https://github.com/user-attachments/assets/a80261c7-350f-45a5-850d-3ef2035a5f83" />
+    <img width="1909" height="1067" alt="스크린샷 2026-04-01 140929" src="https://github.com/user-attachments/assets/ef599fee-c33e-4e8f-aa3b-381dc9aeda97" />
+    <img width="1908" height="678" alt="스크린샷 2026-04-01 140952" src="https://github.com/user-attachments/assets/9c60064b-1663-4374-ac0e-ba476a0791dd" />
 </div>
 <br>
