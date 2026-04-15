@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>야스오 상세</title>
+  
+  <!-- Bootstrap 5 CSS (index.html과 동일하게 연동) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- LOL 스타일 맞추기 위한 간단 커스텀 (필요 시 resources/css/custom.css로 이동) -->
+  <style>
+    body {
+      background-color: #0a0e17;
+      color: white;
+      padding: 1.5rem;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    h3, h4 {
+      color: #c8aa6e; /* LOL 골드 톤 */
+    }
+    .text-muted {
+      color: #a0a0a0 !important;
+    }
+    .list-group-item {
+      background: transparent;
+      border-color: #444;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row g-4">
+      
+      <!-- 왼쪽: 이미지 + 기본 정보 -->
+      <div class="col-lg-5 text-center">
+        <img src="../image/yasuo.png" class="img-fluid rounded shadow-lg" alt="야스오" style="max-height: 480px; object-fit: contain;">
+        <div class="mt-3">
+          <h3 class="mb-1">야스오 (Yasuo)</h3>
+          <p class="text-muted fs-5">전사 / 난이도: 상</p>
+        </div>
+      </div>
+      
+      <!-- 오른쪽: 스킬 + 스토리 -->
+      <div class="col-lg-7">
+        <h4 class="border-bottom border-secondary pb-2 mb-3">스킬</h4>
+        <ul class="list-group list-group-flush mb-4">
+          <li class="list-group-item"><img src="../image/야스오 패시브.webp" class="img-fluid rounded shadow-lg" alt="야스오" style="max-height: 100px; object-fit: contain;">  
+            패시브 : 결심</li>
+              <li class="list-group-item">세 번째 기본 공격이나 풍전참뢰를 가할 때마다 물리 피해를 추가로 입히고 체력을 회복합니다.</li>
+              
+              
+          <li class="list-group-item">
+            <img src="../image/야스오 Q1.webp" class="img-fluid rounded shadow-lg" alt="야스오" style="max-height: 100px; object-fit: contain;">
+            <img src="../image/야스오 Q2.webp" class="img-fluid rounded shadow-lg" alt="야스오" style="max-height: 100px; object-fit: contain;">
+            <img src="../image/야스오 Q3.webp" class="img-fluid rounded shadow-lg" alt="야스오" style="max-height: 100px; object-fit: contain;">
+            Q :  강철 폭풍</li>  
+        <li class="list-gruop-item">
+            야스오가 검을 내질러 물리 피해를 입힙니다. 
+            적중 시 6초간 1회 중첩됩니다. 
+            2회 중첩 시 이 스킬을 다시 사용하면 회오리바람을 날려 동일한 피해를 입히고 1초 동안 에어본띄워 올립니다.
+            돌진 도중 이 스킬을 사용할 경우 원형으로 타격합니다.</li>
+
+        <li class="list-group-item"><img src="../image/야스오 W.webp" class="img-fluid rounded shadow-lg" alt="야스오" style="max-height: 100px; object-fit: contain;">
+              W : 바람장막</li>
+              <li class="list-group-item">
+                4초간 모든 적의 투사체를 막아주는 바람의 벽을 생성합니다.</li>
+
+          <li class="list-group-item"><img src="../image/야스오 E.webp" class="img-fluid rounded shadow-lg" alt="야스오" style="max-height: 100px; object-fit: contain;">
+              E : 질풍검</li>
+              <li class="list-group-item">
+                대상을 뚫고 돌진하여 마법 피해를 입힙니다. 사용할 때마다 5초간 다음번 돌진의 피해량이 25%씩 올라 최대 100%까지 상승합니다.
+
+                이 스킬은 공격 대상별로 재사용 대기시간이 적용됩니다.</li>
+          <li class="list-group-item"><img src="../image/야스오 R.webp" class="img-fluid rounded shadow-lg" alt="야스오" style="max-height: 100px; object-fit: contain;">
+              R : 최후의 숨결</li>
+              <li class="list-group-item">
+               야스오가 적 챔피언에게 순간이동하여 공중에 띄워 붙들어 두며 물리 피해를 입히고 주변 모든 적을 1초 공중에 붙들어둡니다.
+                기류가 최대치로 차는 대신, 강철 폭풍 중첩을 모두 잃습니다.
+                이후 야스오의 치명타 공격이 15초 동안 대상 추가 방어력의 60%를 무시합니다.
+              </li>
+        </ul>
+
+        <h4 class="border-bottom border-secondary pb-2 mb-3">배경 스토리 요약</h4>
+        <p class="text-secondary lh-lg">
+           굳은 결의를 품은 아이오니아의 전사 야스오는 날렵한 검술과 바람을 자유로이 다루는 능력으로 적을 쓰러뜨린다. 
+           젊은 시절, 자부심으로 가득 찼던 야스오는 스승을 살해한 누명을 쓰게 되고, 
+           결백을 증명할 길이 없는 상황에서 급기야는 자신을 보호하기 위해 이부형까지 죽음으로 이끌게 된다. 
+           훗날 스승을 살해한 진범이 밝혀지고 죽은 줄 알았던 형이 살아있다는 사실도 알게 되었으나, 
+           지금도 야스오는 자신의 검을 인도하는 바람에만 의존한 채 세상을 떠돌고 있다. 
+           과거의 자신을 아직 용서하지 못한 채로.
+
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>

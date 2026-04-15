@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>이렐리아 상세</title>
+  <title>신짜오 상세</title>
   
   <!-- Bootstrap 5 CSS (index.html과 동일하게 연동) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -36,10 +36,10 @@
       
       <!-- 왼쪽: 이미지 + 기본 정보 -->
       <div class="col-lg-5 text-center">
-        <img src="../image/irelia.png" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 480px; object-fit: contain;">
+        <img src="../image/xin zhao.png" class="img-fluid rounded shadow-lg" alt="신짜오" style="max-height: 480px; object-fit: contain;">
         <div class="mt-3">
-          <h3 class="mb-1">이렐리아 (Irelia)</h3>
-          <p class="text-muted fs-5">전사 / 난이도: 상</p>
+          <h3 class="mb-1">신짜오 (Xin zhao)</h3>
+          <p class="text-muted fs-5">전사 / 난이도: 중</p>
         </div>
       </div>
       
@@ -47,42 +47,46 @@
       <div class="col-lg-7">
         <h4 class="border-bottom border-secondary pb-2 mb-3">스킬</h4>
         <ul class="list-group list-group-flush mb-4">
-          <li class="list-group-item"><img src="../image/이렐리아 패시브.webp" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 100px; object-fit: contain;">  
-            패시브 : 아이오니아의 열정</li>
+          <li class="list-group-item"><img src="../image/신짜오 패시브.webp" class="img-fluid rounded shadow-lg" alt="신짜오" style="max-height: 100px; object-fit: contain;">  
+            패시브 : 결심</li>
             <li class="list-group-item">
-              이렐리아가 스킬로 적을 맞히면 6초 동안 중첩을 1 얻습니다.
-              (최대 4중첩) 이렐리아가 중첩당 공격 속도를 얻으며 최대 중첩 시 기본 공격으로 추가 마법 피해를 입힙니다.
-              챔피언이나 구조물, 대형 몬스터 공격 시 중첩 지속 시간이 초기화됩니다. 챔피언을 맞히거나 챔피언이 아닌 적을 하나라도 맞힐 때마다 1중첩을 얻습니다.</li>
-          <li class="list-group-item"><img src="../image/이렐리아 Q.webp" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 100px; object-fit: contain;">
-              Q : 칼날 쇄도</li>
+              세 번째 기본 공격이나 풍전참뢰를 가할 때마다 물리 피해를 추가로 입히고 체력을 회복합니다.</li>
+          <li class="list-group-item"><img src="../image/신짜오 Q.webp" class="img-fluid rounded shadow-lg" alt="신짜오" style="max-height: 100px; object-fit: contain;">
+              Q : 삼조격</li>
               <li class="list-gruop-item">
-               이렐리아가 적에게 돌진해 물리 피해를 입히고 체력을 회복합니다. 적이 죽거나 불안정 상태일 경우 재사용 대기시간이 초기화됩니다.</li>
-          <li class="list-group-item"><img src="../image/이렐리아 W.webp" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 100px; object-fit: contain;">
-              W : 저항의 춤</li>
+               신 짜오의 다음 3번의 기본 공격은 물리 피해를 추가로 입히고 다른 스킬의 재사용 대기시간을 1초 감소시킵니다. 또한 세 번째 기본 공격은 0.75초 공중으로 띄워 올립니다.</li>
+          <li class="list-group-item"><img src="../image/신짜오 W.webp" class="img-fluid rounded shadow-lg" alt="신짜오" style="max-height: 100px; object-fit: contain;">
+              W : 풍전참뢰</li>
               <li class="list-group-item">
-                충전 시작 시: 이렐리아가 최대 1.5초 동안 방어 태세에 돌입하여 행동할 수 없게 되지만 받는 물리 피해, 마법 피해가 감소합니다.
-                발사 시: 이렐리아가 검을 날려 물리 피해를 입힙니다. 피해량은 충전 시간에 비례하여 최대 3배만큼 증가합니다.
+                신 짜오가 창을 가르며 물리 피해를 입힌 뒤 그대로 찔러 피해를 입힙니다. 찌르기에 적중당한 적은 1.5초 동안 50% 둔화됩니다.
+
+                찌르기에 적중당한 챔피언과 대형 몬스터는 적중 시 3초 동안 도전받은 상태가 됩니다.
               </li>
-          <li class="list-group-item"><img src="../image/이렐리아 E.webp" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 100px; object-fit: contain;">
-              E : 쌍검협무</li>
+          <li class="list-group-item"><img src="../image/신짜오 E.webp" class="img-fluid rounded shadow-lg" alt="신짜오" style="max-height: 100px; object-fit: contain;">
+              E : 무쌍돌격</li>
               <li class="list-group-item">
-                이렐리아가 지면에 검을 던집니다. 3.5초 내에 스킬을 재사용할 수 있습니다.</li>
-          <li class="list-group-item"><img src="../image/이렐리아 R.webp" class="img-fluid rounded shadow-lg" alt="이렐리아" style="max-height: 100px; object-fit: contain;">
-              R : 선봉진격검</li>
+                신 짜오가 적에게 돌격해 근처의 적들에게 마법 피해를 입히고, 0.5초 동안 30% 둔화시킵니다.
+
+                또한 5초 동안 신 짜오의 공격 속도가 증가합니다.
+
+                도전받은 적을 대상으로는 무쌍돌격의 사거리가 증가합니다.</li>
+          <li class="list-group-item"><img src="../image/신짜오 R.webp" class="img-fluid rounded shadow-lg" alt="신짜오" style="max-height: 100px; object-fit: contain;">
+              R : 현월수호</li>
               <li class="list-group-item">
-                이렐리아가 칼날 다발을 날려 마법 피해를 입히고 챔피언 및 대형 정글 몬스터를 5초 동안 불안정 상태로 만듭니다.
-                칼날 다발은 결계 형태로 폭발하여 2.5초 동안 첫 번째 적중한 챔피언을 둘러쌉니다.
-                결계는 동일한 양의 마법 피해를 입히고 적을 1.5초 동안 90% 둔화시킵니다.
+                기본 지속 효과: 신 짜오의 기본 공격 또는 무쌍돌격에 마지막으로 적중당한 적 챔피언은 3초 동안 도전받은 상태가 됩니다.
+
+                사용 효과: 신 짜오가 창을 휘둘러 물리 피해를 입히고 도전받지 않은 모든 적을 뒤로 밀어냅니다.
+
+                이후 신 짜오가 4초 동안 창이 닿는 거리 밖에 있는 적의 공격에 피해를 입지 않게 됩니다.
               </li>
         </ul>
 
         <h4 class="border-bottom border-secondary pb-2 mb-3">배경 스토리 요약</h4>
         <p class="text-secondary lh-lg">
-           녹서스에게 침략당한 후 아이오니아에서는 수많은 영웅이 등장했지만, 나보리 출신의 젊은 이렐리아만큼 독특한 영웅은 없다.
-           이렐리아는 고향 나보리에 전해 내려오는 고대의 춤을 익혔고, 아이오니아가 침략당하자 그 능력을 전쟁터에서의 기술로 삼았다. 
-           치명적인 위력의 칼날들을 공중에 띄우고 자유자재로 조종하며 싸우는 그녀의 모습은 우아하고 신중하며 군더더기라고는 없었다. 
-           훌륭한 투사임을 입증한 이렐리아는 원하는 바는 아니었으나 아이오니아 저항 세력을 선두에서 이끄는 역할을 맡게 되었고, 
-           지금까지도 고향 땅을 지키고 보존하는 일에 헌신하고 있다.
+           신 짜오는 데마시아 왕가에 충성하는 불굴의 전사다. 
+           한때 녹서스의 투기장으로 끌려가 셀 수 없이 많은 결투를 치렀지만 결국 살아남은 그는 자르반 3세가 이끄는 부대와의 전투에서 과거의 삶을 청산하고 고결한 대의를 추구하는 새로운 삶을 살기로 한다. 
+           신 짜오는 자신이 아끼는 삼조창을 들고 이제 어떤 적이나 상황에 맞닥뜨리더라도 물러서지 않고 새로운 조국을 위해 싸운다.
+
         </p>
       </div>
       

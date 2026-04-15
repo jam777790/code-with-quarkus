@@ -4,277 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>League of Legends - 메인 페이지</title>
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/test.js"></script>
     
+    <!-- Bootstrap 5 CDN (CDN만 사용) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- 커스텀 스타일 -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
 
-    <script>
+  <script>
     window.onload = function() {
     alert("메인 페이지 로딩 완료");
     }
     </script>
-    
-    <!-- 커스텀 스타일 (LOL 테마 + 챔피언 호버 효과) -->
-    <style>
-        body { background-color:a #0a0e17; color: #fff; font-family: 'Arial', sans-serif; }
-        .navbar { background-color: #000; }
-        .hero { background: linear-gradient(to bottom, #1e1e1e, #0a0e17); min-height: 60vh; }
-        .accent-purple { color: #a020f0; }
-        .accent-red { color: #ff0000; }
-        .accent-white { color: #ffffff; }
-        .accent-black { color: #000000; }
-        .card { background-color: #1e1e1e; border: none; transition: transform 0.3s, box-shadow 0.3s; }
-        .card:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(160, 32, 240, 0.5); }
-        .card-img-top { height: 200px; object-fit: cover; border-radius: 10px 10px 0 0; }
-        .btn-primary { background-color: #a020f0; border: none; }
-        .btn-primary:hover { background-color: #800080; }
-    </style>
-</head>
-<body>
-
+  
+    <!-- 네비게이션 바 -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-<div class="container-fluid">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="image/롤아이콘.webp" alt="" width="40" height="40" class="d-inline-block align-text-top">
+                League of Legends
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://www.leagueoflegends.com/ko-kr/news/" target="_blank">뉴스↗</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/champions/" target="_blank">챔피언↗</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="main_page_sub/download.html" target="_blank">다운로드↗</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">외부사이트</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://lol.ps/" target="_blank">프로관전러</a></li>
+                            <li><a class="dropdown-item" href="https://op.gg/ko" target="_blank">OP.GG</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">계정</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://signup.kr.riotgames.com/" target="_blank">회원가입</a></li>
+                            <li><a class="dropdown-item" href="#" target="_blank">로그인</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="챔피언, 뉴스 검색..." id="searchInput">
+                    <button class="btn btn-outline-success" type="submit">검색하기</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-  <a class="navbar-brand" href="#">League of Legends</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="https://www.leagueoflegends.com/ko-kr/news/"target="_blank">뉴스↗</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/champions/"target="_blank">챔피언↗</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="main_page_sub/download.html"target="_blank">다운로드↗</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          외부사이트
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="https://lol.ps/"target="_blank">프로관전러</a></li>
-          <li><a class="dropdown-item" href="https://op.gg/ko"target=>OP.GG</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          계정
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="https://signup.kr.riotgames.com/"target="_blank">회원가입</a></li>
-          <li><a class="dropdown-item" href="https://authenticate.riotgames.com/?client_id=prod-xsso-leagueoflegends&code_challenge=efZ3sh1bt7gSGTq3-5rshy9N-6exB7SZY7YWNS_QCTs&method=riot_identity&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-leagueoflegends%26code_challenge%3DefZ3sh1bt7gSGTq3-5rshy9N-6exB7SZY7YWNS_QCTs%26code_challenge_method%3DS256%26locale%3Dko_KR%26redirect_uri%3Dhttps%253A%252F%252Fxsso.leagueoflegends.com%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%2520offline_access%26state%3Da89fc27d496aeb6fd1b321f5cc%26uri%3Dhttps%253A%252F%252Fleagueoflegends.com%252Fko-kr&security_profile=low"target="_blank">로그인</a></li>
-        </ul>
-      </li>
-    </ul>
-        <form class="d-flex" id="searchForm">
-            <input class="form-control me-2" type="search" placeholder="챔피언, 뉴스검색..."aria-label="Search" id="searchInput">
-            <button class="btnbtn-outline-success" type="submit">검색하기</button>
-        </form>
-  </div>
-</div>
-</nav>
-
-    <!-- 히어로 배너 (Hero Banner) -->
+    <!-- 히어로 배너 -->
     <section class="hero d-flex align-items-center justify-content-center text-center py-5">
         <div class="container">
             <h1 class="display-3 fw-bold">League of Legends</h1>
             <p class="lead">적의 넥서스를 파괴하세요! 5v5 MOBA 전투에서 팀과 함께 승리하세요.</p>
-            <a href="#" class="btn btn-primary btn-lg" onclick="alert('즐거운플레이되세요')">무료플레이</a>
+            <a href="#" class="btn btn-primary btn-lg" onclick="alert('즐거운 플레이 되세요')">무료 플레이</a>
         </div>
     </section>
 
-
-    
-<!-- 챔피언 선택 섹션 (작은 썸네일 PNG로 업데이트!) -->
+    <!-- 챔피언 선택 섹션 -->
     <section class="container my-5">
         <h2 class="text-center mb-4 accent-purple">챔피언 선택</h2>
         <p class="text-center mb-5 accent-black">전투에 뛰어들기, 팀 지원, 또는 그 중간? 당신의 스타일을 선택하세요.</p>
-        <div class="row row-cols-auto g-4"> 
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 g-4">
 
-            <!-- irelia -->
-            <!-- <div class="col-md-6 col-lg-4 col-xl-2">
-                <div class="card text-center h-100">
-                    <img src="image/irelia.png" class="card-img-top" alt="Irelia" loading="lazy">
-                    <div class="card-body">
-                        <h5 class="card-title accent-red">Irelia (탑)</h5>
-                        <p class="card-text accent-white">최초의 땅, 아이오니아를 위하여!</p>
-                    </div>
-                </div>
-            </div> -->
-
+            <!-- 이렐리아 카드 -->
             <div class="col">
-  <div class="card bg-dark text-white border-secondary h-100">
-    <img src="image/irelia.png" class="card-img-top" alt="이렐리아">
-    <div class="card-body">
-      <h5 class="card-title">이렐리아 (Irelia)</h5>
-      <p class="card-text small">역할: 전사 / 난이도: 상</p>
-    </div>
-    <div class="card-footer bg-transparent border-0">
-      <button class="btn btn-outline-light w-100"
-              data-bs-toggle="modal"
-              data-bs-target="#modalIrelia"
-              data-champ="Irelia">
-        상세 보기
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- 모달 (iframe으로 Irelia.html 불러오기) -->
-<div class="modal fade" id="modalIrelia" tabindex="-1" aria-labelledby="modalIreliaLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content bg-dark text-white border-secondary">
-      <!-- 헤더 -->
-      <div class="modal-header border-secondary">
-        <h5 class="modal-title" id="modalIreliaLabel">이렐리아 (Irelia) 상세 정보</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <!-- 바디: iframe으로 내용 채움 -->
-      <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-        <iframe
-          src="modals/Irelia.html"
-          frameborder="0"
-          style="width: 100%; height: 100%; border: none;"
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <!-- 푸터 -->
-      <div class="modal-footer border-secondary">
-        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-            <!-- xin zhao
-            <div class="col-md-6 col-lg-4 col-xl-2">
-                <div class="card text-center h-100">
-                    <img src="image/xin zhao.png" class="card-img-top" alt="Xin zhao" loading="lazy">
+                <div class="card bg-dark text-white border-secondary h-100">
+                    <img src="image/irelia.png" class="card-img-top" alt="이렐리아">
                     <div class="card-body">
-                        <h5 class="card-title accent-purple">Xin zhao (정글)</h5>
-                        <p class="card-text accent-white">창 한 자루로 천 번의 전투를 치렀지!</p>
+                        <h5 class="card-title">이렐리아 (Irelia)</h5>
+                        <p class="card-text small">역할: 전사 / 난이도: 상</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#modalIrelia">
+                            상세 보기
+                        </button>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
+            <!-- 신짜오 카드 -->
             <div class="col">
-  <div class="card bg-dark text-white border-secondary h-100">
-    <img src="image/xin zhao.png" class="card-img-top" alt="신짜오">
-    <div class="card-body">
-      <h5 class="card-title">신짜오 (Xin zhao)</h5>
-      <p class="card-text small">역할: 전사 / 난이도: 상</p>
-    </div>
-    <div class="card-footer bg-transparent border-0">
-      <button class="btn btn-outline-light w-100"
-              data-bs-toggle="modal"
-              data-bs-target="#modalIrelia"
-              data-champ="Xin zhao">
-        상세 보기
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- 모달 (iframe으로 Irelia.html 불러오기) -->
-  <div class="modal fade" id="modalXin zhao" tabindex="-1" aria-labelledby="modalXin zhaoLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content bg-dark text-white border-secondary">
-      <!-- 헤더 -->
-      <div class="modal-header border-secondary">
-        <h5 class="modal-title" id="modalXin zhao">신짜오 (Xin zhao) 상세 정보</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <!-- 바디: iframe으로 내용 채움 -->
-      <div class="modal-body p-0" style="height: 65vh; background: #0a0e17;">
-        <iframe
-          src="modals/Xin zhao.html"
-          frameborder="0"
-          style="width: 100%; height: 100%; border: none;"
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <!-- 푸터 -->
-      <div class="modal-footer border-secondary">
-        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">닫기</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-            <!-- yasuo -->
-            <div class="col-md-6 col-lg-4 col-xl-2">
-                <div class="card text-center h-100">
-                    <img src="image/yasuo.png" class="card-img-top" alt="yasuo" loading="lazy">
+                <div class="card bg-dark text-white border-secondary h-100">
+                    <img src="image/xin zhao.png" class="card-img-top" alt="신짜오">
                     <div class="card-body">
-                        <h5 class="card-title accent-red">Yasuo (미드)</h5>
-                        <p class="card-text accent-white">죽음은 바람과 같지. 늘 내 곁에 있으니.</p>
+                        <h5 class="card-title">신짜오 (Xin Zhao)</h5>
+                        <p class="card-text small">역할: 전사 / 난이도: 중</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#modalXinzhao">
+                            상세 보기
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- yunara -->
-            <div class="col-md-6 col-lg-4 col-xl-2">
-                <div class="card text-center h-100">
-                    <img src="image/yunara.png" class="card-img-top" alt="yunara" loading="lazy">
+            <!-- 야스오 카드 -->
+            <div class="col">
+                <div class="card bg-dark text-white border-secondary h-100">
+                    <img src="image/yasuo.png" class="card-img-top" alt="야스오">
                     <div class="card-body">
-                        <h5 class="card-title accent-purple">Yunara (원딜)</h5>
-                        <p class="card-text accent-white">가지치기할 시간이군.</p>
+                        <h5 class="card-title">야스오 (Yasuo)</h5>
+                        <p class="card-text small">역할: 전사 / 난이도: 상</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#modalyasuo">
+                            상세 보기
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- karma -->
-            <div class="col-md-6 col-lg-4 col-xl-2">
-                <div class="card text-center h-100">
-                    <img src="image/karma.png" class="card-img-top" alt="karma" loading="lazy">
+            <!-- 유나라 카드 -->
+            <div class="col">
+                <div class="card bg-dark text-white border-secondary h-100">
+                    <img src="image/yunara.png" class="card-img-top" alt="유나라">
                     <div class="card-body">
-                        <h5 class="card-title accent-red">Karma (서포터)</h5>
-                        <p class="card-text accent-white">항상 정신을 집중하세요.</p>
+                        <h5 class="card-title">유나라 (Yunara)</h5>
+                        <p class="card-text small">역할: 원거리 딜러 / 난이도: 중</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#modalyunara">
+                            상세 보기
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- poro -->
-            <div class="col-md-6 col-lg-4 col-xl-2">
-                <div class="card text-center h-100">
-                    <img src="image/poro.png" class="card-img-top" alt="poro" loading="lazy">
+            <!-- 멜 카드 -->
+            <div class="col">
+                <div class="card bg-dark text-white border-secondary h-100">
+                    <img src="image/mel.png" class="card-img-top" alt="멜">
                     <div class="card-body">
-                        <h5 class="card-title accent-purple">Poro (펫)</h5>
-                        <p class="card-text accent-white">❤️</p>
+                        <h5 class="card-title">멜 (Mel)</h5>
+                        <p class="card-text small">역할: 마법사 / 난이도: 하</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#modalmel">
+                            상세 보기
+                        </button>
                     </div>
                 </div>
             </div>
+
+            <!-- 자헨 카드 -->
+            <div class="col">
+                <div class="card bg-dark text-white border-secondary h-100">
+                    <img src="image/zaahen.png" class="card-img-top" alt="자헨">
+                    <div class="card-body">
+                        <h5 class="card-title">자헨 (Zaahen)</h5>
+                        <p class="card-text small">역할: 전사 / 난이도: 중</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <button class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#modalzaahen">
+                            상세 보기
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </section> <!-- ✅ 챔피언 섹션 닫기 태그 추가 -->
 
-    <!-- 뉴스 섹션 (기존 유지) -->
+    <!-- 뉴스 섹션 -->
     <section class="container my-5">
         <h2 class="text-center mb-4 accent-red">최신 뉴스</h2>
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
             <div class="col-md-6 col-lg-4">
-                <div class="card">
+                <div class="card bg-dark text-white">
                     <div class="card-body">
-                        <h5 class="card-title accent-white">새로운 챔피언 출시</h5>
-                        <p class="card-text accent-white">2026 루나 레벨 이벤트!</p>
+                        <h5 class="card-title">새로운 챔피언 출시</h5>
+                        <p class="card-text">2026 루나 레벨 이벤트!</p>
                         <a href="#" class="btn btn-outline-primary">더 보기</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="card">
+                <div class="card bg-dark text-white">
                     <div class="card-body">
-                        <h5 class="card-title accent-white">패치 노트</h5>
-                        <p class="card-text accent-white">밸런스 업데이트.</p>
+                        <h5 class="card-title">패치 노트</h5>
+                        <p class="card-text">밸런스 업데이트</p>
                         <a href="#" class="btn btn-outline-primary">더 보기</a>
                     </div>
                 </div>
@@ -282,8 +202,62 @@
         </div>
     </section>
 
+    <!-- ===== 검색 결과 섹션 (기본 숨김) ===== -->
+    <section id="searchResults" style="display:none;"> <!-- ✅ 초기 숨김 추가 -->
+        <!-- 키워드 헤더 -->
+        <div class="search-keyword-header">
+            <h1 id="searchKeywordDisplay"></h1>
+        </div>
+
+        <!-- 본문: 사이드바 + 콘텐츠 -->
+        <div class="search-body">
+            <div class="container-fluid px-0">
+                <div class="row g-0">
+                    <!-- 왼쪽 카테고리 사이드바 -->
+                    <div class="col-md-3 col-lg-2 search-sidebar bg-white py-4">
+                        <div class="px-3 mb-3" style="font-size:0.8rem; color:#999; text-transform:uppercase; letter-spacing:0.1em;">
+                            카테고리
+                        </div>
+                        <div class="search-category-item active" onclick="switchCategory('champion', this)">
+                            챔피언 <span class="count" id="champCount">(0)</span>
+                        </div>
+                        <div class="search-category-item" onclick="switchCategory('news', this)">
+                            뉴스 <span class="count" id="newsCount">(0)</span>
+                        </div>
+                    </div>
+
+                    <!-- 오른쪽 콘텐츠 -->
+                    <div class="col-md-9 col-lg-10 search-content-area">
+                        <!-- 챔피언 결과 -->
+                        <div id="resultChampion">
+                            <h5 class="mb-4" style="color:#333;">챔피언</h5>
+                            <div id="championResultList"></div>
+                        </div>
+                        <!-- 뉴스 결과 -->
+                        <div id="resultNews" style="display:none;">
+                            <h5 class="mb-4" style="color:#333;">뉴스</h5>
+                            <div id="newsResultList"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 모든 모달들 (이렐리아, 신짜오, 야스오, 유나라, 멜, 자헨) -->
+    <!-- 여기에 모달 코드 유지... -->
+
+    <!-- 스크립트를 body 끝에 배치 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/search.js"></script>
     
+    <script>
+        // 페이지 로딩 완료 알림
+        window.addEventListener('DOMContentLoaded', function() {
+            
+            // 검색 폼 확인
+            const searchForm = document.getElementById('searchForm');
+        });
+    </script> 
 </body>
 </html>
-
