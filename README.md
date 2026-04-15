@@ -106,9 +106,42 @@
 
 ## 6주차 수업 내용
 
-실습 1 : 자바 스크립트 기초 (외부 스크립트)
+실습 1 : 자바 스크립트 기초
 
-실습 2 : LOL기능 구현하기 (실시간 챔피언 검색하기)
+<자바스크립트(JavaScript)>
+- 웹 기술 스택의 핵심: HTML(구조), CSS(디자인), JavaScript(동작)
+- 역할: 버튼 클릭, 검색, 애니메이션 등 웹사이트를 움직이게 만듦
+- 중요도: IT 기업이 가장 선호하는 개발 기술
+- 활용 범위: 웹, 모바일, 백엔드 모두 가능
+
+<변수 선언 (var, let, const)>
+- var: 오래된 방식, 재선언 가능, 권장 ❌
+- let: 값 변경 가능, 재선언 불가
+- const: 값 변경 불가, 재선언 불가 (권장 ✅)
+- 스코프: var는 함수 단위, let/const는 블록 단위
+
+<호이스팅(Hoisting)>
+- 변수/함수 선언이 코드 맨 위로 자동 이동하는 현상
+- var: undefined로 초기화됨
+- let/const: TDZ(사용 전 접근 불가) 발생 → 에러
+
+<DOM (Document Object Model)>
+- HTML을 트리 구조로 표현한 것
+- JavaScript가 HTML 요소를 찾고 수정할 수 있게 해줌
+- 주요 메서드: getElementById(): ID로 요소 찾기, querySelector(): CSS 선택자로 찾기
+
+<addEventListener: 클릭, 입력 등 사용자 동작에 반응>
+- preventDefault(): 폼 제출 시 페이지 새로고침 방지
+- onclick 방식보다 addEventListener 권장
+
+
+실습 2 : LOL기능 구현하기 (검색 - 구글)
+
+- 데이터: 챔피언/뉴스 정보를 배열로 저장
+- filter(): 검색어와 일치하는 데이터만 추출
+- innerHTML: 검색 결과를 HTML로 동적 생성
+- 탭 전환: 챔피언/뉴스 카테고리 클릭 시 화면 변경
+
 
 <div aligh="center">
     <img width="1898" height="1069" alt="image" src="https://github.com/user-attachments/assets/14f16865-0fa6-4450-9d66-b4587d605f81" />
@@ -116,3 +149,31 @@
     <img width="1875" height="1059" alt="image" src="https://github.com/user-attachments/assets/1e67fe4a-58ed-4728-9c71-22e416e17867" />
 </div>
 <br>
+
+## 7주차 수업 내용
+
+실습 1 : LOL기능 구현하기 (검색창 구현)
+
+목표: "이렐리아" 검색하면 → 챔피언 카드 나오기
+
+- 챔피언 데이터 준비 (이름, 역할, 사진)
+- 검색어 입력 → filter()로 일치하는 챔피언 찾기
+- 찾은 정보로 카드 만들어서 화면에 보여주기!
+
+실습 2 : 주차 별 과제하기
+
+- 상단 좌측 이미지 (네비바 안 로고 삽입)
+- 네비바 가운데 정렬
+- 챔피언 카드 추가 (상세 모달 추가 구현)
+- 데이터 정의 추가
+- 검색어 기능 추가
+<div aligh="center">
+    <img width="1909" height="755" alt="image" src="https://github.com/user-attachments/assets/a7fc72e5-c1cb-4db3-86d7-64464ba45572" />
+    <img width="1897" height="77" alt="image" src="https://github.com/user-attachments/assets/e61a284f-e5fe-40aa-a681-ec8e2ba66b11" />
+    <img width="1888" height="870" alt="image" src="https://github.com/user-attachments/assets/434aeda0-a434-44a4-88dc-bd804a6c7c31" />
+
+</div>
+<br>
+
+
+
