@@ -12,14 +12,14 @@
 - 장점: Spring Boot 대비 10배 빠른 부팅
 - 단점: 빌드 시간이 길고, 프로젝트 이전 어려움
 
-<HTML 기본 태그>
+<기본 태그 >
     
 - 구조 태그: html, head, body, div
 - 내용 태그: h1~h6(제목), p(문단), ul/li(목록)
 - 메타 태그: meta, title, link
 - 이미지 태그: img
 
-<Bootstrap>
+<부트스트랩>
 
 - 정의: 웹 디자인을 쉽게 만드는 CSS 프레임워크
 - 주요 클래스: container, row, col, card, navbar
