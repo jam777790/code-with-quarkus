@@ -40,3 +40,16 @@
     <img width="1908" height="678" alt="스크린샷 2026-04-01 140952" src="https://github.com/user-attachments/assets/9c60064b-1663-4374-ac0e-ba476a0791dd" />
 </div>
 <br>
+
+## 6주차 수업 내용
+
+실습 1 : 자바 스크립트 기초 (외부 스크립트)
+
+실습 2 : LOL기능 구현하기 (실시간 챔피언 검색하기)
+
+<div aligh="center">
+    <img width="1898" height="1069" alt="image" src="https://github.com/user-attachments/assets/14f16865-0fa6-4450-9d66-b4587d605f81" />
+    <img width="305" height="55" alt="image" src="https://github.com/user-attachments/assets/faaab8cd-9980-460f-b808-345468f76b59" />
+    <img width="1875" height="1059" alt="image" src="https://github.com/user-attachments/assets/1e67fe4a-58ed-4728-9c71-22e416e17867" />
+</div>
+<br>
