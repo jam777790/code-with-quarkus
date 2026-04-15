@@ -1,4 +1,4 @@
-<img width="1913" height="756" alt="image" src="https://github.com/user-attachments/assets/ebfda170-fb3c-4614-ab2d-061323800a8f" /># Quarkus 과제 시작 ! (학번 : 20231018        이름 : 이환희)
+# Quarkus 과제 시작 ! (학번 : 20231018        이름 : 이환희)
 
 ## 3주차 수업 내용
 
@@ -40,6 +40,11 @@
 - 마우스 호버링
 - 상단 메뉴
 
+<느낀점>
+
+- 처음 배우는 내용들이라 다소 생소 했음
+- 부트스트랩 기능, 기본 태그 같은 요소들이 흥미로웠음
+- 실제 페이지를 구사했을 땐 이렇게 만들 수 있다는게 신기했음
 
 <div aligh="center">
     <img width="1892" height="695" alt="스크린샷 2026-03-18 183236" src="https://github.com/user-attachments/assets/70ff833a-5cb7-4618-ad88-42113963f3e2" />
@@ -71,6 +76,12 @@
 - 이미지: <img src=""> (그림 삽입)
 - 상대/절대 경로 (파일 위치 찾기)
 
+<느낀점>
+
+- 홈페이지가 더욱 구체화 되니 뿌듯했음
+- 내가 원하는 이미지, 캐릭터를 추가할 수 있게 되니 재밌었음
+- 모달창 생성 및 연결이 어려웠지만 차분히 구조를 파악하고 해결해서 후련했음
+
 <div aligh="center">
     <img width="1885" height="692" alt="스크린샷 2026-03-25 142511" src="https://github.com/user-attachments/assets/ae5f8128-a7bc-4670-a18a-1b25d93f673e" />
     <img width="1896" height="821" alt="스크린샷 2026-03-25 142527" src="https://github.com/user-attachments/assets/40a07071-1077-4b21-b20d-7760a5a7aaf9" />
@@ -96,6 +107,11 @@
 - Windows/Mac 선택 가능
 - 컴퓨터 사양 표 (내 컴퓨터가 게임 돌아갈까? 확인)
 
+<느낀점>
+
+- 만들어둔 틀로 모달창을 여러 개 생성하고 나니 홈페이지가 풍성해져서 좋았음
+- 모달창 내에 문구 뿐만 아니라 이미지도 추가하여 완성하니 뿌듯했음
+- 실제 다운로드 페이지와 유사한 외부 페이지를 구현해내서 기뻤음.
 
 <div aligh="center">
     <img width="1904" height="1067" alt="스크린샷 2026-04-01 140643" src="https://github.com/user-attachments/assets/a80261c7-350f-45a5-850d-3ef2035a5f83" />
@@ -142,6 +158,11 @@
 - innerHTML: 검색 결과를 HTML로 동적 생성
 - 탭 전환: 챔피언/뉴스 카테고리 클릭 시 화면 변경
 
+<느낀점>
+
+- 자바 스크립트 내의 기능들이 단번에 이해되지 않아서 어려웠음
+- 후에 교수님의 설명을 듣고 혼자서도 고민해본 후 해결함
+- 만들어둔 검색창을 통해 구글과 연결할 수 있다는게 재밌었음 
 
 <div aligh="center">
     <img width="1898" height="1069" alt="image" src="https://github.com/user-attachments/assets/14f16865-0fa6-4450-9d66-b4587d605f81" />
@@ -167,6 +188,13 @@
 - 챔피언 카드 추가 (상세 모달 추가 구현)
 - 데이터 정의 추가
 - 검색어 기능 추가
+
+<느낀점>
+
+- 데이터 정의 파트를 할 때 이미지 생성이 되지 않아 난처했음
+- 후에 교수님께 질문 후 이미지 코드에서 오류확인 후 해결
+- 과제들을 수행하며 전반적인 코드들을 훑어보며 복습할 수 있어 좋았음.
+
 <div aligh="center">
     <img width="1909" height="755" alt="image" src="https://github.com/user-attachments/assets/a7fc72e5-c1cb-4db3-86d7-64464ba45572" />
     <img width="1897" height="77" alt="image" src="https://github.com/user-attachments/assets/e61a284f-e5fe-40aa-a681-ec8e2ba66b11" />
