@@ -6,32 +6,32 @@
 
 <Quarkus 프레임워크>
 
--정의: 클라우드 네이티브 Java 프레임워크
--특징: 빠른 시작 시간, 낮은 메모리 사용
--메모리 비교: Quarkus+GraalVM(13MB) vs 전통방식(140MB)
--장점: Spring Boot 대비 10배 빠른 부팅
--단점: 빌드 시간이 길고, 프로젝트 이전 어려움
+- 정의: 클라우드 네이티브 Java 프레임워크
+- 특징: 빠른 시작 시간, 낮은 메모리 사용
+- 메모리 비교: Quarkus+GraalVM(13MB) vs 전통방식(140MB)
+- 장점: Spring Boot 대비 10배 빠른 부팅
+- 단점: 빌드 시간이 길고, 프로젝트 이전 어려움
 
 <HTML 기본 태그>
     
--구조 태그: html, head, body, div
--내용 태그: h1~h6(제목), p(문단), ul/li(목록)
--메타 태그: meta, title, link
--이미지 태그: img
+- 구조 태그: html, head, body, div
+- 내용 태그: h1~h6(제목), p(문단), ul/li(목록)
+- 메타 태그: meta, title, link
+- 이미지 태그: img
 
 <Bootstrap>
 
--정의: 웹 디자인을 쉽게 만드는 CSS 프레임워크
--주요 클래스: container, row, col, card, navbar
--CDN: 외부 서버에서 Bootstrap 파일 불러오기
+- 정의: 웹 디자인을 쉽게 만드는 CSS 프레임워크
+- 주요 클래스: container, row, col, card, navbar
+- CDN: 외부 서버에서 Bootstrap 파일 불러오기
 
 <CSS 스타일링>
 
--배경색: background-color
--글자색: color
--테두리: border
--전환효과: transition, transform, hover
--크기조절: height, width
+- 배경색: background-color
+- 글자색: color
+- 테두리: border
+- 전환효과: transition, transform, hover
+- 크기조절: height, width
 
 실습 2 : LOL 메인화면 페이지 만들기
 
