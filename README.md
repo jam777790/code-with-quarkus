@@ -204,5 +204,42 @@
 </div>
 <br>
 
+## 8주차 수업 내용 
 
+- 중간고사
 
+## 9주차 수업 내용
+
+실습 1 : 자바스크립트 기능 (다크/라이트 모드 전환)
+
+- 일반 배열 vs 객체 배열
+<img width="663" height="276" alt="image" src="https://github.com/user-attachments/assets/a890a5c7-c624-4527-a0db-5e67fecca6ab" />
+
+- HTML에 버튼 추가
+- CSS로 디자인
+- JavaScript로 작동시키기
+
+실습 2 : 데이터베이스 연동
+
+- 데이터베이스
+    - 데이터베이스 = 거대한 엑셀 파일
+    - 테이블 = 각각의 시트
+    - 행(Row) = 챔피언 한 명의 정보
+    - 열(Column) = 이름, 역할, 라인 등
+ 
+- 데이터베이스 생성
+- 자바 프로젝트와 연결하기 (application.properties 파일)
+- 챔피언 테이블 만들기 (Champion.java)
+- 챔피언 데이터 넣기 (DataSeeder.java)
+- 웹에서 데이터 보기 (ChampionResource.java)
+
+<느낀점>
+
+<div aligh="center">
+<img width="1904" height="1070" alt="image" src="https://github.com/user-attachments/assets/e0a36b20-8b4c-4eb8-956d-43b327c70053" />
+<img width="1911" height="1072" alt="image" src="https://github.com/user-attachments/assets/8442c119-9621-4669-8e0e-18e4a532c47e" />
+<img width="1109" height="578" alt="image" src="https://github.com/user-attachments/assets/de9e2711-ac93-4ad7-9b73-94517bd16112" />
+<img width="1911" height="1102" alt="image" src="https://github.com/user-attachments/assets/b36cdf55-0926-4652-bc56-9c9ab9c2e9b2" />
+<img width="867" height="1041" alt="image" src="https://github.com/user-attachments/assets/6b76ed1e-ba63-4492-985f-ae6d4cdbcf18" />
+</div>
+<br>
