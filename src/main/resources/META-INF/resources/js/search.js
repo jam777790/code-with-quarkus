@@ -1,11 +1,35 @@
 // ── 챔피언 데이터 ──────────────────────────────────────────────
 const CHAMPIONS = [
-    { name: '이렐리아', engName: 'Irelia', role: '전사', lane: '탑', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Irelia.png', difficulty: '상' },
-    { name: '신짜오', engName: 'XinZhao', role: '전사', lane: '정글', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/XinZhao.png', difficulty: '중' },
-    { name: '야스오', engName: 'Yasuo', role: '전사', lane: '미드', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Yasuo.png', difficulty: '상' },
-    { name: '유나라', engName: 'Yunara', role: '원거리딜러', lane: '원딜', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Yunara.png', difficulty: '중' },
-    { name: '멜', engName: 'Mel', role: '마법사', lane: '미드', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Mel.png', difficulty: '하' },
-    { name: '자헨', engName: 'Zaahen', role: '전사', lane: '탑', img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Zaahen.png', difficulty: '중' },
+    { name: '이렐리아', engName: 'Irelia', role: '전사', lane: '탑',
+      img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Irelia.png',
+      difficulty: '상',
+      modalId: 'modalIrelia'
+    },
+    { name: '신짜오', engName: 'XinZhao', role: '전사', lane: '정글',
+      img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/XinZhao.png',
+      difficulty: '중',
+      modalId: 'modalXinZhao'
+    },
+    { name: '야스오', engName: 'Yasuo', role: '전사', lane: '미드',
+      img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Yasuo.png',
+      difficulty: '상',
+      modalId: 'modalYasuo'
+    },
+    { name: '유나라', engName: 'Yunara', role: '원거리딜러', lane: '원딜',
+      img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Yunara.png',
+      difficulty: '중',
+      modalId: 'modalYunara'
+    },
+    { name: '멜', engName: 'Mel', role: '마법사', lane: '미드',
+      img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Mel.png',
+      difficulty: '하',
+      modalId: 'modalMel'
+    },
+    { name: '자헨', engName: 'Zaahen', role: '전사', lane: '탑',
+      img: 'https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Zaahen.png',
+      difficulty: '중',
+      modalId: 'modalZaahen'
+    },
 ];
 
 // ── 뉴스 데이터 ──────────────────────────────────────────────
@@ -100,23 +124,47 @@ function performSearch(query) {
             </div>
         `;
     } else {
-        champList.innerHTML = champResults.map(c => `
-            <div class="search-result-card d-flex align-items-center p-0 mb-3 overflow-hidden" 
-                 style="border: 1px solid #ddd; border-radius: 8px; background: #fff;">
-                <img src="${c.img}" alt="${c.name}" 
-                     style="width: 80px; height: 80px; object-fit: cover;"
-                     onerror="this.src='https://via.placeholder.com/80'">
-                <div class="p-3">
-                    <div style="font-weight:700; font-size:1rem; color:#111;">
-                        ${c.name} <span style="color:#888; font-size:0.85rem;">(${c.engName})</span>
-                    </div>
-                    <div style="color:#555; font-size:0.9rem; margin-top:4px;">
-                        역할: ${c.role} &nbsp;|&nbsp; 라인: ${c.lane} &nbsp;|&nbsp; 난이도: ${c.difficulty}
-                    </div>
+            champList.innerHTML = champResults.map(c => `
+        <div class="search-result-card d-flex align-items-center p-0 mb-3 overflow-hidden"
+            style="border: 1px solid #ddd; border-radius: 8px; background: #fff; cursor:pointer;"
+            
+            data-bs-toggle="modal"
+            data-bs-target="#${c.modalId}">
+            
+            <img src="${c.img}" alt="${c.name}" 
+                style="width: 80px; height: 80px; object-fit: cover;"
+                onerror="this.src='https://via.placeholder.com/80'">
+                
+            <div class="p-3">
+                <div style="font-weight:700; font-size:1rem; color:#111;">
+                    ${c.name}
+                    <span style="color:#888; font-size:0.85rem;">(${c.engName})</span>
+                </div>
+                <div style="color:#555; font-size:0.9rem; margin-top:4px;">
+                    역할: ${c.role} &nbsp;|&nbsp;
+                    라인: ${c.lane} &nbsp;|&nbsp;
+                    난이도: ${c.difficulty}
                 </div>
             </div>
-        `).join('');
+        </div>
+    `).join('');
     }
+
+    // 모달 열기 함수
+function openChampionModal(modalId) {
+    const modalEl = document.getElementById(modalId);
+
+    if (!modalEl) {
+        console.error('모달을 찾을 수 없습니다:', modalId);
+        return;
+    }
+
+    // 숨겨진 section 안에 모달이 있으면 안 보일 수 있으므로 body로 이동
+    document.body.appendChild(modalEl);
+
+    const modal = new bootstrap.Modal(modalEl);
+    modal.show();
+}
     
     // 뉴스 결과 렌더링
     const newsList = document.getElementById('newsResultList');

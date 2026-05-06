@@ -63,3 +63,105 @@ body {
 .accent-purple { 
     color: #a020f0; 
 }
+
+/* ===== 라이트 모드 ===== */
+
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* 히어로 영역 */
+body.light-mode .hero {
+    background:
+        linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.8)),
+        url('../image/롤 다운로드.webp') center/cover no-repeat;
+}
+
+/* 제목 */
+body.light-mode .hero h1 {
+    color: #6a1bb9;
+    text-shadow: none;
+}
+
+/* 버튼 */
+body.light-mode .btn-download {
+    background-color: #a020f0;
+    color: white;
+}
+
+/* 탭 */
+body.light-mode .nav-tabs .nav-link {
+    color: #333;
+}
+
+body.light-mode .nav-tabs .nav-link.active {
+    background-color: #ffffff;
+    color: #6a1bb9;
+    border-color: #a020f0;
+}
+
+/* 테이블 */
+body.light-mode .table {
+    --bs-table-bg: #ffffff;
+    --bs-table-color: #000;
+    --bs-table-border-color: #ccc;
+}
+
+body.light-mode .table th {
+    background-color: #e9ecef;
+    color: #6a1bb9;
+}
+
+/* 카드 */
+body.light-mode .card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+/* 보라색 강조 */
+body.light-mode .accent-purple {
+    color: #6a1bb9;
+}
+
+/* ===== 라이트모드 네비바 ===== */
+
+body.light-mode .navbar {
+    background-color: #ffffff !important;
+}
+
+/* 네비바 링크 */
+body.light-mode .navbar .nav-link {
+    color: #000 !important;
+}
+
+/* 활성화 링크 */
+body.light-mode .navbar .nav-link.active {
+    color: #6a1bb9 !important;
+}
+
+/* 브랜드 텍스트 */
+body.light-mode .navbar-brand {
+    color: #000 !important;
+}
+
+/* dropdown 버튼 */
+body.light-mode .navbar .dropdown-toggle {
+    color: #000 !important;
+}
+
+/* 토글 버튼 */
+body.light-mode #themeToggleBtn {
+    border-color: #000;
+    color: #000;
+}
+
+/* 햄버거 메뉴 아이콘 */
+body.light-mode .navbar-toggler {
+    border-color: #000;
+}
+
+body.light-mode .navbar-toggler-icon {
+    filter: invert(1);
+}
