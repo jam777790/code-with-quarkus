@@ -176,19 +176,17 @@
 
 ---
 
-### 🔍 11주차: 회원가입 기능 개발 및 패스워드 암호화 적용
+### 🔍 11주차: 회원가입 기능 개발
 #### 🛠️ 실습 내용
 1. **회원가입(Sign-Up) 파이프라인 구축**
    - 유저 입력 폼 유효성 검증 및 데이터베이스 계정 객체 신규 데이터 인서트
-2. **패스워드 해싱 및 단방향 암호화**
-   - 데이터베이스 탈취 시에도 보안을 유지하기 위한 비밀번호 암호화 알고리즘 적용 실습
 
 #### 💬 느낀점
-> 비밀번호를 날것 그대로 저장하지 않고 암호화하여 안전하게 다루는 백엔드 보안 기술을 배우며 개발자로서 한 단계 더 성장한 느낌을 받았습니다. 회원가입부터 로그인까지의 전체 회원 관리를 완성하게 되어 매우 뿌듯합니다.
+> 
 
 <div align="center">
   <img width="24%" alt="11주차 스크린샷 1" src="https://github.com/user-attachments/assets/fb8c6587-3b94-438d-bf03-5030b0b78475" />
-  <img width="24%" alt="11주차 스크린샷 2" src="https://github.com/user-attachments/assets/6c731417-4e7d-4fe0-a99b-0af717230ae8" />
+  <img width="1375" height="144" alt="image" src="https://github.com/user-attachments/assets/4bbc8a05-5dc5-49f6-a9fe-6bd5eac27a15" />
   <img width="24%" alt="11주차 스크린샷 3" src="https://github.com/user-attachments/assets/c23babf2-c773-40e6-a0f4-09ed19be3d0f" />
   <img width="24%" alt="11주차 스크린샷 4" src="https://github.com/user-attachments/assets/de5ce32f-b943-4915-90af-a37caaf8e983" />
 </div>
@@ -196,3 +194,9 @@
 ---
 
 ### 🔍 12주차: 회원가입 기능 개발 및 패스워드 암호화 적용
+#### 🛠️ 실습 내용
+1. **패스워드 해싱 및 단방향 암호화**
+   - 데이터베이스 탈취 시에도 보안을 유지하기 위한 비밀번호 암호화 알고리즘 적용 실습
+  
+#### 💬 느낀점
+> 비밀번호를 날것 그대로 저장하지 않고 암호화하여 안전하게 다루는 백엔드 보안 기술을 배우며 개발자로서 한 단계 더 성장한 느낌을 받았습니다. 회원가입부터 로그인까지의 전체 회원 관리를 완성하게 되어 매우 뿌듯합니다.
