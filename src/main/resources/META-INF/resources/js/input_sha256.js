@@ -16,7 +16,6 @@ const password = document.getElementById('password').value;
 document.getElementById('confirmUsername').textContent = username;
 document.getElementById('confirmEmail').textContent = email;
 document.getElementById('confirmPhone').textContent = phone;
-
 // SHA-256 해시 생성 → hidden 필드(id="password")에 저장
 const hashed = await hashPassword(password);
 document.getElementById('hashedPassword').value = hashed;
