@@ -192,3 +192,7 @@
   <img width="24%" alt="11주차 스크린샷 3" src="https://github.com/user-attachments/assets/c23babf2-c773-40e6-a0f4-09ed19be3d0f" />
   <img width="24%" alt="11주차 스크린샷 4" src="https://github.com/user-attachments/assets/de5ce32f-b943-4915-90af-a37caaf8e983" />
 </div>
+
+---
+
+### 🔍 12주차: 회원가입 기능 개발 및 패스워드 암호화 적용
