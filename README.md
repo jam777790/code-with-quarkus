@@ -1,245 +1,194 @@
-# Quarkus 과제 시작 ! (학번 : 20231018        이름 : 이환희)
+# 🚀 Quarkus 프로젝트 실습 과제
 
-## 3주차 수업 내용
-
-실습 1 : quarkus 개발 환경 구축
-
-<Quarkus 프레임워크>
-
-- 정의: 클라우드 네이티브 Java 프레임워크
-- 특징: 빠른 시작 시간, 낮은 메모리 사용
-- 메모리 비교: Quarkus+GraalVM(13MB) vs 전통방식(140MB)
-- 장점: Spring Boot 대비 10배 빠른 부팅
-- 단점: 빌드 시간이 길고, 프로젝트 이전 어려움
-
-<기본 태그 >
-    
-- 구조 태그: html, head, body, div
-- 내용 태그: h1~h6(제목), p(문단), ul/li(목록)
-- 메타 태그: meta, title, link
-- 이미지 태그: img
-
-<부트스트랩>
-
-- 정의: 웹 디자인을 쉽게 만드는 CSS 프레임워크
-- 주요 클래스: container, row, col, card, navbar
-- CDN: 외부 서버에서 Bootstrap 파일 불러오기
-
-<CSS 스타일링>
-
-- 배경색: background-color
-- 글자색: color
-- 테두리: border
-- 전환효과: transition, transform, hover
-- 크기조절: height, width
-
-실습 2 : LOL 메인화면 페이지 만들기
-
-- 검은 배경 + 보라색 글자
-- 챔피언 카드
-- 마우스 호버링
-- 상단 메뉴
-
-<느낀점>
-
-- 처음 배우는 내용들이라 다소 생소 했음
-- 부트스트랩 기능, 기본 태그 같은 요소들이 흥미로웠음
-- 실제 페이지를 구사했을 땐 이렇게 만들 수 있다는게 신기했음
-
-<div aligh="center">
-    <img width="1892" height="695" alt="스크린샷 2026-03-18 183236" src="https://github.com/user-attachments/assets/70ff833a-5cb7-4618-ad88-42113963f3e2" />
-<img width="1897" height="798" alt="스크린샷 2026-03-18 160832" src="https://github.com/user-attachments/assets/f70c7964-5cd2-4994-a6cf-e2be2c7f7234" />
+<div align="center">
+  <img src="https://img.shields.io/badge/Quarkus-4695EB?style=for-the-badge&logo=Quarkus&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"/>
 </div>
-<br>
 
+### 👤 작성자 정보
+- **학번:** 20231018
+- **이름:** 이환희
 
-## 4주차 수업 내용
+---
 
-실습 1 : 부트스트랩 이해/활용하기 (챔피언 추가, 하이퍼링크, 네비 바)
+## 📅 주차별 수업 및 실습 내용
 
-<Bootstrap 5>
+### 🔍 3주차: Quarkus 환경 구축 및 LOL 메인화면 기초
+#### 🛠️ 실습 내용
+1. **Quarkus 개발 환경 구축**
+   - **정의:** 클라우드 네이티브 Java 프레임워크
+   - **특징:** 빠른 시작 시간, 낮은 메모리 사용량 (Spring Boot 대비 약 10배 빠른 부팅)
+   - **메모리 비교:** Quarkus + GraalVM (`13MB`) vs 전통 방식 (`140MB`)
+   - **장단점:** 부팅이 매우 빠르나, 빌드 시간이 다소 길고 기존 프로젝트의 이전이 까다로움
+2. **웹 기초 및 Bootstrap 맛보기**
+   - **기본 태그:** 구조(`html`, `head`, `body`, `div`), 내용(`h1~h6`, `p`, `ul/li`), 메타(`meta`, `title`, `link`), 이미지(`img`)
+   - **Bootstrap:** 외부 서버에서 CDN 방식으로 불러와 `container`, `row`, `col`, `card`, `navbar` 등의 클래스로 손쉽게 레이아웃 구성
+   - **CSS 스타일링:** `background-color`, `color`, `border`, `transition`, `transform`, `:hover`, `height/width` 활용
+3. **LOL 메인화면 페이지 만들기**
+   - 검은 배경 + 보라색 테마 글자 구성
+   - 챔피언 카드 배치 및 마우스 호버(Hover) 효과 추가
+   - 상단 네비게이션 메뉴 구현
 
-- CDN 방식으로 연결
-- 네비게이션 바 (메뉴)
-- 그리드 시스템 (화면 배치)
-- 카드, 버튼, 모달창
+#### 💬 느낀점
+> 처음 배우는 내용들이라 다소 생소했지만, 부트스트랩 기능이나 기본 태그 같은 요소들이 흥미로웠습니다. 코드를 통해 실제 웹 페이지가 뚝딱 구사되는 모습을 직접 눈으로 확인하니 무척 신기했습니다.
 
-실습 2 : 모달창 구현하기
-
-<CSS 스타일>
-- 선택자 우선순위 (요소 < 클래스 < ID < !important)
-- 외부 CSS 파일 연결
-- Flexbox (화면 배치 방법)
-
-<기본>
-- 하이퍼링크: <a href=""> (페이지 연결)
-- 이미지: <img src=""> (그림 삽입)
-- 상대/절대 경로 (파일 위치 찾기)
-
-<느낀점>
-
-- 홈페이지가 더욱 구체화 되니 뿌듯했음
-- 내가 원하는 이미지, 캐릭터를 추가할 수 있게 되니 재밌었음
-- 모달창 생성 및 연결이 어려웠지만 차분히 구조를 파악하고 해결해서 후련했음
-
-<div aligh="center">
-    <img width="1885" height="692" alt="스크린샷 2026-03-25 142511" src="https://github.com/user-attachments/assets/ae5f8128-a7bc-4670-a18a-1b25d93f673e" />
-    <img width="1896" height="821" alt="스크린샷 2026-03-25 142527" src="https://github.com/user-attachments/assets/40a07071-1077-4b21-b20d-7760a5a7aaf9" />
-    <img width="1905" height="1066" alt="스크린샷 2026-03-25 193135" src="https://github.com/user-attachments/assets/57d48dff-fb57-43dc-95bf-ecca244e8ed4" />
+<div align="center">
+  <img width="49%" alt="3주차 스크린샷 1" src="https://github.com/user-attachments/assets/70ff833a-5cb7-4618-ad88-42113963f3e2" />
+  <img width="49%" alt="3주차 스크린샷 2" src="https://github.com/user-attachments/assets/f70c7964-5cd2-4994-a6cf-e2be2c7f7234" />
 </div>
-<br>
 
+---
 
-## 5주차 수업 내용
+### 🔍 4주차: Bootstrap 심화 및 모달(Modal)창 구현
+#### 🛠️ 실습 내용
+1. **Bootstrap 5 활용 및 화면 배치**
+   - 네비게이션 바 메뉴 및 그리드 시스템(Grid System)을 이용한 반응형 화면 배치
+   - 카드, 버튼, 모달 디자인 요소 레이아웃 적용
+2. **CSS 심화 및 모달창 구조 이해**
+   - **선택자 우선순위:** `요소(Tag) < 클래스(.) < ID(#) < !important`
+   - 외부 CSS 파일 연결 및 `Flexbox`를 활용한 정교한 화면 정렬
+   - 하이퍼링크(`<a href="">`)와 이미지 경로(상대경로 vs 절대경로) 마스터
 
-실습 1 : 모달창 마무리
+#### 💬 느낀점
+> 레이아웃이 잡히며 홈페이지가 더욱 구체화되는 모습을 보니 뿌듯했습니다. 내가 원하는 이미지와 좋아하는 캐릭터를 직접 추가할 수 있어서 재미가 배가 되었습니다. 모달창 생성과 연결 부분이 처음엔 조금 어려웠지만, 차분히 구조를 파악하고 해결해 내서 아주 후련했습니다!
 
-<챔피언 카드 클릭>
-
-- 팝업창(모달)이 뜸
-- 안에 챔피언 스킬, 이야기 등이 보임
-
-실습 2 : 다운로드 페이지 구현하기(다운로드 파일 생성)
-
-<다운로드 페이지>
-
-- 게임 설치 파일 다운받는 버튼
-- Windows/Mac 선택 가능
-- 컴퓨터 사양 표 (내 컴퓨터가 게임 돌아갈까? 확인)
-
-<느낀점>
-
-- 만들어둔 틀로 모달창을 여러 개 생성하고 나니 홈페이지가 풍성해져서 좋았음
-- 모달창 내에 문구 뿐만 아니라 이미지도 추가하여 완성하니 뿌듯했음
-- 실제 다운로드 페이지와 유사한 외부 페이지를 구현해내서 기뻤음.
-
-<div aligh="center">
-    <img width="1904" height="1067" alt="스크린샷 2026-04-01 140643" src="https://github.com/user-attachments/assets/a80261c7-350f-45a5-850d-3ef2035a5f83" />
-    <img width="1909" height="1067" alt="스크린샷 2026-04-01 140929" src="https://github.com/user-attachments/assets/ef599fee-c33e-4e8f-aa3b-381dc9aeda97" />
-    <img width="1908" height="678" alt="스크린샷 2026-04-01 140952" src="https://github.com/user-attachments/assets/9c60064b-1663-4374-ac0e-ba476a0791dd" />
+<div align="center">
+  <img width="32%" alt="4주차 스크린샷 1" src="https://github.com/user-attachments/assets/ae5f8128-a7bc-4670-a18a-1b25d93f673e" />
+  <img width="32%" alt="4주차 스크린샷 2" src="https://github.com/user-attachments/assets/40a07071-1077-4b21-b20d-7760a5a7aaf9" />
+  <img width="32%" alt="4주차 스크린샷 3" src="https://github.com/user-attachments/assets/57d48dff-fb57-43dc-95bf-ecca244e8ed4" />
 </div>
-<br>
 
-## 6주차 수업 내용
+---
 
-실습 1 : 자바 스크립트 기초
+### 🔍 5주차: 모달창 상세화 및 다운로드 페이지 구현
+#### 🛠️ 실습 내용
+1. **모달창 컴포넌트 완성**
+   - 챔피언 카드 클릭 시 상세 팝업(모달) 오픈 기능 구현
+   - 모달 내부에 챔피언별 스킬 정보, 스토리(이야기) 데이터 동적 바인딩
+2. **클라이언트 다운로드 페이지 구성**
+   - 게임 설치 파일 다운로드 버튼 배치
+   - OS별(Windows / Mac) 선택 옵션 제공
+   - 깔끔한 마크업 테이블(Table)을 활용한 '컴퓨터 게임 구동 사양표' 작성
 
-<자바스크립트(JavaScript)>
-- 웹 기술 스택의 핵심: HTML(구조), CSS(디자인), JavaScript(동작)
-- 역할: 버튼 클릭, 검색, 애니메이션 등 웹사이트를 움직이게 만듦
-- 중요도: IT 기업이 가장 선호하는 개발 기술
-- 활용 범위: 웹, 모바일, 백엔드 모두 가능
+#### 💬 느낀점
+> 기존에 만들어둔 틀을 활용해 여러 개의 모달창을 확장하고 나니 홈페이지가 훨씬 풍성하고 완성도 높게 느껴졌습니다. 텍스트뿐만 아니라 스킬 이미지까지 깔끔하게 매칭시켜 뿌듯했고, 실제 상용 게임의 다운로드 페이지와 유사한 퀄리티를 구현해 내서 기뻤습니다.
 
-<변수 선언 (var, let, const)>
-- var: 오래된 방식, 재선언 가능, 권장 ❌
-- let: 값 변경 가능, 재선언 불가
-- const: 값 변경 불가, 재선언 불가 (권장 ✅)
-- 스코프: var는 함수 단위, let/const는 블록 단위
-
-<호이스팅(Hoisting)>
-- 변수/함수 선언이 코드 맨 위로 자동 이동하는 현상
-- var: undefined로 초기화됨
-- let/const: TDZ(사용 전 접근 불가) 발생 → 에러
-
-<DOM (Document Object Model)>
-- HTML을 트리 구조로 표현한 것
-- JavaScript가 HTML 요소를 찾고 수정할 수 있게 해줌
-- 주요 메서드: getElementById(): ID로 요소 찾기, querySelector(): CSS 선택자로 찾기
-
-<addEventListener: 클릭, 입력 등 사용자 동작에 반응>
-- preventDefault(): 폼 제출 시 페이지 새로고침 방지
-- onclick 방식보다 addEventListener 권장
-
-
-실습 2 : LOL기능 구현하기 (검색 - 구글)
-
-- 데이터: 챔피언/뉴스 정보를 배열로 저장
-- filter(): 검색어와 일치하는 데이터만 추출
-- innerHTML: 검색 결과를 HTML로 동적 생성
-- 탭 전환: 챔피언/뉴스 카테고리 클릭 시 화면 변경
-
-<느낀점>
-
-- 자바 스크립트 내의 기능들이 단번에 이해되지 않아서 어려웠음
-- 후에 교수님의 설명을 듣고 혼자서도 고민해본 후 해결함
-- 만들어둔 검색창을 통해 구글과 연결할 수 있다는게 재밌었음 
-
-<div aligh="center">
-    <img width="1898" height="1069" alt="image" src="https://github.com/user-attachments/assets/14f16865-0fa6-4450-9d66-b4587d605f81" />
-    <img width="305" height="55" alt="image" src="https://github.com/user-attachments/assets/faaab8cd-9980-460f-b808-345468f76b59" />
-    <img width="1875" height="1059" alt="image" src="https://github.com/user-attachments/assets/1e67fe4a-58ed-4728-9c71-22e416e17867" />
+<div align="center">
+  <img width="32%" alt="5주차 스크린샷 1" src="https://github.com/user-attachments/assets/a80261c7-350f-45a5-850d-3ef2035a5f83" />
+  <img width="32%" alt="5주차 스크린샷 2" src="https://github.com/user-attachments/assets/ef599fee-c33e-4e8f-aa3b-381dc9aeda97" />
+  <img width="32%" alt="5주차 스크린샷 3" src="https://github.com/user-attachments/assets/9c60064b-1663-4374-ac0e-ba476a0791dd" />
 </div>
-<br>
 
-## 7주차 수업 내용
+---
 
-실습 1 : LOL기능 구현하기 (검색창 구현)
+### 🔍 6주차: JavaScript 기초 및 동적 데이터 처리 (검색 연동)
+#### 🛠️ 실습 내용
+1. **JavaScript 핵심 기초 이론**
+   - **역할:** HTML(구조), CSS(디자인) 위에 동적 기능(클릭, 애니메이션, 검색) 적용
+   - **변수 선언:** `var`(재선언 가능, 지양 ❌), `let`(값 변경 가능, 재선언 불가), `const`(상수, 재선언/변경 불가, 권장 ✅)
+   - **호이스팅(Hoisting):** 선언문이 최상단으로 끌어올려지는 현상. `var`는 `undefined`로 초기화되나 `let/const`는 TDZ 상태로 에러를 발생시켜 안전한 코딩 유도
+2. **DOM(Document Object Model) 제어 및 이벤트**
+   - `getElementById()`, `querySelector()` 등을 이용한 HTML 요소 탐색
+   - `addEventListener`를 활용한 이벤트 처리 및 `preventDefault()`로 폼 제출 시 새로고침 방지
+3. **LOL 데이터 필터링 및 구글 검색 연동**
+   - 챔피언 및 뉴스 데이터를 **배열(Array)** 형태로 관리
+   - JavaScript의 `filter()` 함수를 사용해 입력된 검색어와 일치하는 데이터 추출
+   - `innerHTML` 속성을 활용해 필터링된 결과를 웹 화면에 동적으로 생성 및 카테고리 탭 전환 구현
 
-목표: "이렐리아" 검색하면 → 챔피언 카드 나오기
+#### 💬 느낀점
+> 자바스크립트의 동작 원리나 호이스팅 같은 개념들이 한 번에 와닿지 않아서 조금 헤매기도 했습니다. 하지만 교수님의 설명을 기반으로 혼자 코드를 뜯어보며 고민한 덕분에 흐름을 이해할 수 있었습니다. 특히 검색창을 통해 실제 구글과 연동되는 메커니즘을 직접 구현해보니 신기하고 흥미로웠습니다.
 
-- 챔피언 데이터 준비 (이름, 역할, 사진)
-- 검색어 입력 → filter()로 일치하는 챔피언 찾기
-- 찾은 정보로 카드 만들어서 화면에 보여주기!
-
-실습 2 : 주차 별 과제하기
-
-- 상단 좌측 이미지 (네비바 안 로고 삽입)
-- 네비바 가운데 정렬
-- 챔피언 카드 추가 (상세 모달 추가 구현)
-- 데이터 정의 추가
-- 검색어 기능 추가
-
-<느낀점>
-
-- 데이터 정의 파트를 할 때 이미지 생성이 되지 않아 난처했음
-- 후에 교수님께 질문 후 이미지 코드에서 오류확인 후 해결
-- 과제들을 수행하며 전반적인 코드들을 훑어보며 복습할 수 있어 좋았음.
-
-<div aligh="center">
-    <img width="1909" height="755" alt="image" src="https://github.com/user-attachments/assets/a7fc72e5-c1cb-4db3-86d7-64464ba45572" />
-    <img width="1897" height="77" alt="image" src="https://github.com/user-attachments/assets/e61a284f-e5fe-40aa-a681-ec8e2ba66b11" />
-    <img width="1888" height="870" alt="image" src="https://github.com/user-attachments/assets/434aeda0-a434-44a4-88dc-bd804a6c7c31" />
-    <img width="1911" height="759" alt="제목 없음" src="https://github.com/user-attachments/assets/4e3b3420-cbad-4b9c-8872-d00669ad2c37" />
-    <img width="1913" height="756" alt="image" src="https://github.com/user-attachments/assets/5a4add53-b9c0-476c-a746-122a1bd6ba9b" />
+<div align="center">
+  <img width="42%" alt="6주차 스크린샷 1" src="https://github.com/user-attachments/assets/14f16865-0fa6-4450-9d66-b4587d605f81" />
+  <img width="14%" alt="6주차 스크린샷 2" src="https://github.com/user-attachments/assets/faaab8cd-9980-460f-b808-345468f76b59" />
+  <img width="42%" alt="6주차 스크린샷 3" src="https://github.com/user-attachments/assets/1e67fe4a-58ed-4728-9c71-22e416e17867" />
 </div>
-<br>
 
-## 8주차 수업 내용 
+---
 
-- 중간고사
+### 🔍 7주차: 내부 검색 기능 완성 및 종합 주차별 과제
+#### 🛠️ 실습 내용
+1. **인페이지(In-Page) 챔피언 검색창 구현**
+   - **목표:** 검색창에 "이렐리아" 입력 시 해당하는 챔피언 카드만 화면에 필터링하기
+   - 데이터 구조 정의 ➡️ `filter()` 매칭 ➡️ 카드를 dynamic HTML로 바인딩하여 렌더링
+2. **주차별 과제 종합 수행**
+   - 네비게이션 바 상단 좌측 로고 이미지 삽입 및 정렬 조절 (가운데 정렬)
+   - 신규 챔피언 카드 추가 및 이에 대응하는 상세 설명 모달창 연동
+   - 데이터 정의부 구조 고도화 및 실시간 동적 검색 기능 최종 검증
 
-## 9주차 수업 내용
+#### 💬 느낀점
+> 데이터 정의 파트를 작성할 때 화면에 이미지가 깨지거나 불러와지지 않는 오류가 생겨서 난처했습니다. 다행히 교수님께 피드백을 구하고 코드 상의 사소한 에러를 잡아내며 해결할 수 있었습니다. 주차별 과제를 종합적으로 수행하면서 그동안 배웠던 전체적인 프론트엔드 코드 흐름을 복습하는 좋은 계기가 되었습니다.
 
-실습 1 : 자바스크립트 기능 (다크/라이트 모드 전환)
-
-- 일반 배열 vs 객체 배열
-<img width="663" height="276" alt="image" src="https://github.com/user-attachments/assets/a890a5c7-c624-4527-a0db-5e67fecca6ab" />
-
-- HTML에 버튼 추가
-- CSS로 디자인
-- JavaScript로 작동시키기
-
-실습 2 : 데이터베이스 연동
-
-- 데이터베이스
-    - 데이터베이스 = 거대한 엑셀 파일
-    - 테이블 = 각각의 시트
-    - 행(Row) = 챔피언 한 명의 정보
-    - 열(Column) = 이름, 역할, 라인 등
- 
-- 데이터베이스 생성
-- 자바 프로젝트와 연결하기 (application.properties 파일)
-- 챔피언 테이블 만들기 (Champion.java)
-- 챔피언 데이터 넣기 (DataSeeder.java)
-- 웹에서 데이터 보기 (ChampionResource.java)
-
-<느낀점>
-
-<div aligh="center">
-<img width="1904" height="1070" alt="image" src="https://github.com/user-attachments/assets/e0a36b20-8b4c-4eb8-956d-43b327c70053" />
-<img width="1911" height="1072" alt="image" src="https://github.com/user-attachments/assets/8442c119-9621-4669-8e0e-18e4a532c47e" />
-<img width="1109" height="578" alt="image" src="https://github.com/user-attachments/assets/de9e2711-ac93-4ad7-9b73-94517bd16112" />
-<img width="1911" height="1102" alt="image" src="https://github.com/user-attachments/assets/b36cdf55-0926-4652-bc56-9c9ab9c2e9b2" />
-<img width="867" height="1041" alt="image" src="https://github.com/user-attachments/assets/6b76ed1e-ba63-4492-985f-ae6d4cdbcf18" />
+<div align="center">
+  <img width="32%" alt="7주차 스크린샷 1" src="https://github.com/user-attachments/assets/a7fc72e5-c1cb-4db3-86d7-64464ba45572" />
+  <img width="32%" alt="7주차 스크셔 2" src="https://github.com/user-attachments/assets/e61a284f-e5fe-40aa-a681-ec8e2ba66b11" />
+  <img width="32%" alt="7주차 스크린샷 3" src="https://github.com/user-attachments/assets/434aeda0-a434-44a4-88dc-bd804a6c7c31" />
+  <br/><br/>
+  <img width="49%" alt="7주차 스크린샷 4" src="https://github.com/user-attachments/assets/4e3b3420-cbad-4b9c-8872-d00669ad2c37" />
+  <img width="49%" alt="7주차 스크린샷 5" src="https://github.com/user-attachments/assets/5a4add53-b9c0-476c-a746-122a1bd6ba9b" />
 </div>
-<br>
+
+---
+
+### 🔍 8주차: 중간고사
+📝 **중간고사 필기 및 실기 시험 진행**
+
+---
+
+### 🔍 9주차: UI 테마 전환 및 Quarkus 데이터베이스(DB) 연동
+#### 🛠️ 실습 내용
+1. **다크 모드 / 라이트 모드 토글 기능**
+   - 일반 배열(Array)과 객체 배열(Object Array)의 데이터 표현 차이 학습
+   - HTML/CSS로 다크모드 스위치 버튼을 디자인하고 JavaScript 클래스 제어(`classList.toggle`)로 스타일 전환 구현
+2. **Quarkus 백엔드 - 데이터베이스 연동**
+   - **개념:** DB(거대한 엑셀), 테이블(시트), 행/Row(챔피언 개별 정보), 열/Column(이름, 역할, 라인 속성)
+   - `application.properties` 설정을 통한 자바 프로젝트와 데이터베이스 커넥션 풀 연결
+   - **Entity 설계:** `Champion.java` 객체를 생성하여 데이터베이스 테이블 매핑
+   - **Data Seeding:** `DataSeeder.java`로 초기 챔피언 더미 데이터 적재
+   - **REST API 구현:** `ChampionResource.java` 엔드포인트를 구축하여 웹 브라우저에서 JSON 데이터를 정상적으로 조회 확인
+
+#### 💬 느낀점
+> 프론트엔드 디자인 영역을 넘어 백엔드 엔진인 Quarkus와 데이터베이스를 연결하는 과정이 매우 정교하게 맞아떨어져서 신기했습니다. 데이터가 소스코드 내부가 아닌 실제 DB 테이블로부터 바인딩되어 유기적으로 움직이는 '진짜 웹 애플리케이션'의 아키텍처를 경험할 수 있어서 유익했습니다.
+
+<div align="center">
+  <img width="32%" alt="9주차 스크린샷 1" src="https://github.com/user-attachments/assets/e0a36b20-8b4c-4eb8-956d-43b327c70053" />
+  <img width="32%" alt="9주차 스크린샷 2" src="https://github.com/user-attachments/assets/8442c119-9621-4669-8e0e-18e4a532c47e" />
+  <img width="32%" alt="9주차 스크린샷 3" src="https://github.com/user-attachments/assets/de9e2711-ac93-4ad7-9b73-94517bd16112" />
+  <br/><br/>
+  <img width="49%" alt="9주차 스크린샷 4" src="https://github.com/user-attachments/assets/b36cdf55-0926-4652-bc56-9c9ab9c2e9b2" />
+  <img width="49%" alt="9주차 스크린샷 5" src="https://github.com/user-attachments/assets/6b76ed1e-ba63-4492-985f-ae6d4cdbcf18" />
+</div>
+
+---
+
+### 🔍 10주차: 인증 아키텍처 - 로그인 및 로그아웃 기능
+#### 🛠️ 실습 내용
+1. **사용자 로그인(Sign-In) 프로세스**
+   - 세션(Session) 혹은 토큰 기반의 사용자 인증 메커니즘 분석 및 데이터 처리
+2. **세션 만료 및 로그아웃(Sign-Out) 처리**
+   - 인증 상태 초기화 및 안전한 화면 리다이렉션 라우팅 처리
+
+#### 💬 느낀점
+> 웹 서비스에서 가장 기본적이면서도 중요한 보안의 첫걸음인 로그인 시스템을 직접 다루어보며 웹 서버가 유저의 상태를 어떻게 기억하고 유지하는지 심도 있게 이해할 수 있었습니다.
+
+---
+
+### 🔍 11주차: 회원가입 기능 개발 및 패스워드 암호화 적용
+#### 🛠️ 실습 내용
+1. **회원가입(Sign-Up) 파이프라인 구축**
+   - 유저 입력 폼 유효성 검증 및 데이터베이스 계정 객체 신규 데이터 인서트
+2. **패스워드 해싱 및 단방향 암호화**
+   - 데이터베이스 탈취 시에도 보안을 유지하기 위한 비밀번호 암호화 알고리즘 적용 실습
+
+#### 💬 느낀점
+> 비밀번호를 날것(Plain Text) 그대로 저장하지 않고 암호화하여 안전하게 다루는 백엔드 보안 기술을 배우며 개발자로서 한 단계 더 성장한 느낌을 받았습니다. 회원가입부터 로그인까지의 전체 회원 관리 라이프사이클을 완성하게 되어 매우 뿌듯합니다.
+
+<div align="center">
+  <img width="24%" alt="11주차 스크린샷 1" src="https://github.com/user-attachments/assets/fb8c6587-3b94-438d-bf03-5030b0b78475" />
+  <img width="24%" alt="11주차 스크린샷 2" src="https://github.com/user-attachments/assets/6c731417-4e7d-4fe0-a99b-0af717230ae8" />
+  <img width="24%" alt="11주차 스크린샷 3" src="https://github.com/user-attachments/assets/c23babf2-c773-40e6-a0f4-09ed19be3d0f" />
+  <img width="24%" alt="11주차 스크린샷 4" src="https://github.com/user-attachments/assets/de5ce32f-b943-4915-90af-a37caaf8e983" />
+</div>
