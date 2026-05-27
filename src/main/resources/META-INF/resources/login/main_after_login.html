@@ -15,12 +15,9 @@
 
   <script>
     window.onload = function() {
-    alert("메인 페이지 로딩 완료");
+    showToast("메인 페이지 로딩 완료");
     }
     </script>
-    
-    <script src="../js/test2.js"></script>
-    <script src="../js/toggle.js"></script>
 
     <!-- 네비게이션 바 -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -48,6 +45,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../main_page_sub/download.html" target="_blank">다운로드↗</a>
                     </li>
+                    <li class="nav-item">
+                                
+                            <a class="nav-link btn btn-outline-danger btn-sm px-3 nav-link" href="/profile"
+                            id="profileNavLink"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="bottom">👤프로필</a>
+                            </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">외부사이트</a>
                         <ul class="dropdown-menu">
@@ -59,15 +63,12 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">계정</a>
                         <ul class="dropdown-menu">
                             <!-- 기존 로그아웃 버튼 앞에 추가 -->
-                              <li class="nav-item">
-                            <a class="nav-link btn btn-outline-danger btn-sm px-3" href="/profile">
-                            👤프로필
-                            </a>
-                            </li>
+                              
                             <li class="nav-item">
                             <a class="nav-link btn btn-outline-danger btn-sm px-3"
                             href="/logout">로그아웃</a>
                             </li>
+                            
                             </li>
                         </ul>
                     </li>
@@ -429,6 +430,9 @@ allowfullscreen>
     <!-- body 맨 아래 script 부분을 이렇게 수정 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/search.js"></script>
+    <script src="../js/test2.js"></script>
+    <script src="../js/toggle.js"></script>
+    <script src="../js/profile.js"></script>
     
     <script>
         // 페이지 로딩 완료 알림

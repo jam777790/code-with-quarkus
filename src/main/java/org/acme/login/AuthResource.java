@@ -4,6 +4,12 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import java.net.URI;
+import java.nio.file.Paths;
+import java.util.Map;
+import java.util.UUID;
+
+import org.jboss.resteasy.reactive.RestForm;
+
 import java.io.InputStream;
 
 import jakarta.inject.Inject;
@@ -205,4 +211,129 @@ return Response.ok(html).build();
         System.out.println("=== [HTML 로드 성공] " + htmlPath);
         return Response.ok(html).build();
     }
+
+    @GET
+    @Path("/profile")
+    @Produces(MediaType.TEXT_HTML)
+    public Response profilePage() {
+    // ①세션체크(로그인안한사용자차단)
+    String loginUser = context.session().get("loginUser");
+    if (loginUser == null) {
+    return Response
+    .seeOther(URI.create("/login"))
+    .build();
+    }
+    // ②DB에서사용자정보조회
+    User user = User.findByUsername(loginUser);
+    // ③세션에사용자정보저장(HTML에서활용)
+    context.session().put("userEmail", user.email);
+    context.session().put("userPhone", user.phone);
+    context.session().put("profileImage",
+    user.profileImage != null ? user.profileImage : "default.png");
+    // ④프로필페이지반환
+    InputStream html = getClass()
+    .getClassLoader()
+    .getResourceAsStream(
+    "META-INF/resources/login/profile.html");
+    return Response.ok(html).build();
+    }
+
+    @GET
+    @Path("/profile/info")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response profileInfo() {
+    // 세션체크
+    String loginUser= context.session().get("loginUser");
+    if (loginUser== null) {
+    return Response.status(401).build();
+    }
+    // DB 조회
+    User user= User.findByUsername(loginUser);
+    // JSON 응답
+    return Response.ok(
+    Map.of(
+    "username",     user.username,
+    "email",        user.email != null ? user.email : "",
+    "phone",        user.phone != null ? user.phone : "",
+    "profileImage", user.profileImage!= null
+    ? user.profileImage: ""
+    )
+    ).build();
+    }
+
+    @POST
+@Path("/profile/upload")
+@Transactional
+@Consumes(MediaType.MULTIPART_FORM_DATA)
+public Response profileUpload(
+        @RestForm("profileImage") org.jboss.resteasy.reactive.multipart.FileUpload file) {
+
+    String loginUser = context.session().get("loginUser");
+
+    if (loginUser == null) {
+        return Response
+                .seeOther(URI.create("/login"))
+                .build();
+    }
+
+    try {
+        if (file == null || file.fileName() == null || file.fileName().isEmpty()) {
+            return Response
+                    .seeOther(URI.create("/profile?error=no_file"))
+                    .build();
+        }
+
+        String original = file.fileName();
+
+        if (!original.contains(".")) {
+            return Response
+                    .seeOther(URI.create("/profile?error=invalid_type"))
+                    .build();
+        }
+
+        String ext = original.substring(original.lastIndexOf('.') + 1).toLowerCase();
+
+        if (!ext.matches("jpg|jpeg|png|gif|webp")) {
+            return Response
+                    .seeOther(URI.create("/profile?error=invalid_type"))
+                    .build();
+        }
+
+        if (file.size() > 5 * 1024 * 1024) {
+            return Response
+                    .seeOther(URI.create("/profile?error=too_large"))
+                    .build();
+        }
+
+        String newFileName = UUID.randomUUID() + "." + ext;
+
+        java.nio.file.Path uploadDir = Paths.get(
+                "src/main/resources/META-INF/resources/uploads/profile"
+        );
+
+        java.nio.file.Files.createDirectories(uploadDir);
+
+        java.nio.file.Files.copy(
+                file.uploadedFile(),
+                uploadDir.resolve(newFileName),
+                java.nio.file.StandardCopyOption.REPLACE_EXISTING
+        );
+
+        User user = User.findByUsername(loginUser);
+        user.profileImage = newFileName;
+
+        return Response
+                .seeOther(URI.create("/profile"))
+                .build();
+
+    } catch (Exception e) {
+        e.printStackTrace();
+
+        return Response
+                .seeOther(URI.create("/profile?error=upload_fail"))
+                .build();
+    }
 }
+}
+
+
