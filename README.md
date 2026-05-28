@@ -203,4 +203,30 @@
 
 <div align="center">
 <img width="1375" height="144" alt="image" src="https://github.com/user-attachments/assets/4bbc8a05-5dc5-49f6-a9fe-6bd5eac27a15" />
+<img width="922" height="979" alt="image" src="https://github.com/user-attachments/assets/170a71d5-402b-4955-9611-57ab4c64658d" />
+</div>
+
+---
+
+### 🔍 13주차: 프로필 페이지 작성
+#### 🛠️ 실습 내용
+1. **로그인 후 화면 상단 네비바에 프로필 구역 추가**
+   - after_login 화면 상단에 프로필 구역 생성 및 상호작용 가능
+2. **프로필 페이지 구성**
+   - 엔드포인트 등록
+   - 사진 추가
+   - 사진 업로드 기능
+   - 로그인 계정의 아이디, 이메일, 연락처 불러오기
+3. **프론트 수정**
+   - 토스트 컨테이네
+   - 사용자명 동적 표시
+#### 💬 느낀점
+>
+
+<div align="center">
+<img width="1919" height="1069" alt="image" src="https://github.com/user-attachments/assets/fa135a82-9637-4446-8010-200e39ef9e3c" />
+<img width="1918" height="1074" alt="image" src="https://github.com/user-attachments/assets/364d461f-2136-4ece-b81a-77b7c891c281" />
+<img width="326" height="200" alt="image" src="https://github.com/user-attachments/assets/3d4169ab-28a8-44f3-bdb7-b1c562152154" />
+<img width="1918" height="1067" alt="image" src="https://github.com/user-attachments/assets/6f0f0951-0a51-4edd-8da5-695cb0ecc589" />
+<img width="599" height="118" alt="image" src="https://github.com/user-attachments/assets/87fea666-db50-4711-ad58-869a449067cd" />
 </div>
