@@ -3,178 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>League of Legends - 메인 페이지</title>
-    
-    <!-- Bootstrap 5 CDN (CDN만 사용) -->
+    <title>League of Legends - 프로필</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- 커스텀 스타일 -->
     <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
 
-  <script>
-    window.onload = function() {
-    alert("메인 페이지 로딩 완료");
-    }
-    </script>
-    
-    <script src="../js/test2.js"></script>
-    <script src="../js/toggle.js"></script>
+<script src="../js/test2.js"></script>
+<script src="../js/toggle.js"></script>
 
-    <!-- 네비게이션 바 -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../image/롤아이콘.webp" alt="" width="35" height="36" class="d-inline-block align-text-top">
-                League of Legends
-                <!-- [변경] "Navbar" 텍스트 → 다크/라이트 토글 버튼 -->
-                <button class="btn border-0" id="themeToggleBtn" onclick="toggleTheme()">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="../image/롤아이콘.webp" alt="" width="35" height="36" class="d-inline-block align-text-top">
+            League of Legends
+            <button class="btn border-0" id="themeToggleBtn" onclick="toggleTheme()" type="button">
                 🌙DARK
-                </button>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="https://www.leagueoflegends.com/ko-kr/news/" target="_blank">뉴스↗</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/champions/" target="_blank">챔피언↗</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../main_page_sub/download.html" target="_blank">다운로드↗</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">외부사이트</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="https://lol.ps/" target="_blank">프로관전러</a></li>
-                            <li><a class="dropdown-item" href="https://op.gg/ko" target="_blank">OP.GG</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">계정</a>
-                        <ul class="dropdown-menu">
-                            <!-- 기존 로그아웃 버튼 앞에 추가 -->
-                              <li class="nav-item">
-                            <a class="nav-link btn btn-outline-danger btn-sm px-3" href="/profile">
-                            👤프로필
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link btn btn-outline-danger btn-sm px-3"
-                            href="/logout">로그아웃</a>
-                            </li>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" id="searchForm">
-                    <input class="form-control me-2" type="search" placeholder="챔피언, 뉴스 검색..." id="searchInput">
-                    <button class="btn btn-outline-success" type="submit">검색하기</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+        </a>
 
-        <section style="
-        min-height: calc(100vh - 70px);
-        background: #0b0f17;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        padding-top: 90px;
-        text-align: center;
-    ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div style="width: 100%; max-width: 500px;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://www.leagueoflegends.com/ko-kr/news/" target="_blank">뉴스↗</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.leagueoflegends.com/ko-kr/champions/" target="_blank">챔피언↗</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../main_page_sub/download.html" target="_blank">다운로드↗</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">외부사이트</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://lol.ps/" target="_blank">프로관전러</a></li>
+                        <li><a class="dropdown-item" href="https://op.gg/ko" target="_blank">OP.GG</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">계정</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="/profile">👤 프로필</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-danger" href="/logout">로그아웃</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
-            <h2 class="fw-bold mb-4 text-white">내프로필</h2>
-
-            <!-- 프로필사진영역 -->
-            <div class="mb-4">
-                <img
-                    id="profileImg"
-                    src="../uploads/profile/default.png"
-                    class="rounded-circle"
-                    width="120"
-                    height="120"
-                    style="object-fit: cover; border: 3px solid #fff;"
-                    alt="프로필사진">
-            </div>
-
-            <!-- 개인정보출력 -->
-            <div class="card bg-dark text-white border-secondary mb-4">
-                <div class="card-body text-start">
-                    <table class="table table-dark table-bordered mb-0">
-                        <tr>
-                            <th style="width: 30%;">아이디</th>
-                            <td id="infoUsername"></td>
-                        </tr>
-                        <tr>
-                            <th>이메일</th>
-                            <td id="infoEmail"></td>
-                        </tr>
-                        <tr>
-                            <th>연락처</th>
-                            <td id="infoPhone"></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <!-- 사진업로드폼 -->
-            <form
-                id="uploadForm"
-                method="POST"
-                action="/profile/upload"
-                enctype="multipart/form-data">
-
-                <div class="mb-3">
-                    <label class="form-label text-white fw-bold">
-                        프로필사진변경
-                    </label>
-
-                    <input
-                        type="file"
-                        class="form-control"
-                        id="profileFile"
-                        name="profileImage"
-                        accept="image/jpeg,image/png,image/gif,image/webp">
-
-                    <div class="form-text text-muted">
-                        jpg, png, gif, webp / 최대 5MB
-                    </div>
-                </div>
-
-                <button
-                    type="submit"
-                    class="btn btn-primary w-100">
-                    사진업로드
-                </button>
+            <form class="d-flex" id="searchForm">
+                <input class="form-control me-2" type="search" placeholder="챔피언, 뉴스 검색..." id="searchInput">
+                <button class="btn btn-outline-success" type="submit">검색하기</button>
             </form>
-
         </div>
-    </section>
+    </div>
+</nav>
 
-    <script src="../js/search.js"></script>
-    <script src="../js/toggle.js"></script>
-    <script src="../js/profile.js"></script>
+<section style="
+    min-height: calc(100vh - 70px);
+    background: #0b0f17;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+">
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // 페이지 로딩 완료 알림
-        window.addEventListener('DOMContentLoaded', function() {
-            
-            // 검색 폼 확인
-            const searchForm = document.getElementById('searchForm');
-        });
-    </script>   
+    <div style="width: 100%; max-width: 500px;">
+
+        <h2 class="fw-bold mb-4 text-white">내프로필</h2>
+
+        <div class="mb-4">
+            <img
+                id="profileImg"
+                src="../uploads/profile/default.png"
+                class="rounded-circle"
+                width="120"
+                height="120"
+                style="object-fit: cover; border: 3px solid #fff;"
+                alt="프로필사진">
+        </div>
+
+        <div class="card bg-dark text-white border-secondary mb-4">
+            <div class="card-body text-start">
+                <table class="table table-dark table-bordered mb-0">
+                    <tr>
+                        <th style="width: 30%;">아이디</th>
+                        <td id="infoUsername"></td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td id="infoEmail"></td>
+                    </tr>
+                    <tr>
+                        <th>연락처</th>
+                        <td id="infoPhone"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <form
+            id="uploadForm"
+            method="POST"
+            action="/profile/upload"
+            enctype="multipart/form-data">
+
+            <div class="mb-3 text-start">
+                <label class="form-label text-white fw-bold">
+                    프로필사진변경
+                </label>
+
+                <input
+                    type="file"
+                    class="form-control"
+                    id="profileFile"
+                    name="profileImage"
+                    accept="image/jpeg,image/png,image/gif,image/webp">
+
+                <div class="form-text text-muted">
+                    jpg, png, gif, webp / 최대 5MB
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">
+                사진업로드
+            </button>
+        </form>
+
+        <!-- 사진 업로드 오류 메시지 -->
+        <div id="uploadErrorMsg" class="alert alert-danger d-none mt-3"></div>
+                </form>
+                <div id="uploadErrorMsg" class="alert alert-danger d-none mt-3"></div>
+
+<hr class="my-4 text-white">
+
+<button class="btn btn-warning w-100 mb-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#updateFormArea"
+        aria-expanded="false">
+    📝 개인정보 수정
+</button>
+
+<div class="collapse" id="updateFormArea">
+    <div class="card card-body bg-dark text-white border-secondary mt-2">
+
+        <div id="updateMsg" class="alert d-none mb-3"></div>
+
+        <form id="updateForm" method="POST" action="/profile/update">
+            <div class="mb-3 text-start">
+                <label class="form-label">이메일</label>
+                <input type="text"
+                       class="form-control"
+                       id="updateEmail"
+                       name="email"
+                       placeholder="example@email.com">
+                <div class="invalid-feedback" id="updateEmailMsg"></div>
+            </div>
+
+            <div class="mb-3 text-start">
+                <label class="form-label">연락처</label>
+                <input type="text"
+                       class="form-control"
+                       id="updatePhone"
+                       name="phone"
+                       placeholder="010-0000-0000">
+                <div class="invalid-feedback" id="updatePhoneMsg"></div>
+            </div>
+
+            <button type="button"
+                    class="btn btn-warning w-100"
+                    onclick="validateAndUpdate()">
+                수정 완료
+            </button>
+        </form>
+    </div>
+</div>
+
+<hr class="my-4 text-white">
+
+<h5 class="fw-bold mb-3 text-white">비밀번호 변경</h5>
+
+<div id="pwMsg" class="alert d-none mb-3"></div>
+
+<form id="pwForm" method="POST" action="/profile/password">
+    <div class="mb-3 text-start">
+        <label class="form-label text-white">현재 비밀번호</label>
+        <input type="password"
+               class="form-control"
+               id="currentPwInput"
+               placeholder="현재 비밀번호 입력"
+               required>
+        <div class="invalid-feedback" id="currentPwMsg"></div>
+
+        <input type="hidden"
+               id="currentPassword"
+               name="currentPassword">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label text-white">새 비밀번호</label>
+        <input type="password"
+               class="form-control"
+               id="newPwInput"
+               placeholder="8자 이상, 영문+숫자+특수문자"
+               required>
+        <div class="invalid-feedback" id="newPwMsg"></div>
+
+        <input type="hidden"
+               id="newPassword"
+               name="newPassword">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label text-white">새 비밀번호 확인</label>
+        <input type="password"
+               class="form-control"
+               id="newPwConfirm"
+               placeholder="새 비밀번호 재입력"
+               required>
+        <div class="invalid-feedback" id="newPwConfirmMsg"></div>
+    </div>
+
+    <button type="button"
+            class="btn btn-danger w-100"
+            onclick="validateAndChangePassword()">
+        비밀번호 변경
+    </button>
+</form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/test2.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/toggle.js"></script>
+<script src="../js/profile.js"></script>
 
 </body>
 </html>

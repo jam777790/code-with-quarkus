@@ -242,21 +242,21 @@ return Response.ok(html).build();
     @Path("/profile/info")
     @Produces(MediaType.APPLICATION_JSON)
     public Response profileInfo() {
-    // 세션체크
-    String loginUser= context.session().get("loginUser");
-    if (loginUser== null) {
+    // 세션 체크
+    String loginUser = context.session().get("loginUser");
+    if (loginUser == null) {
     return Response.status(401).build();
     }
     // DB 조회
-    User user= User.findByUsername(loginUser);
+    User user = User.findByUsername(loginUser);
     // JSON 응답
     return Response.ok(
     Map.of(
-    "username",     user.username,
-    "email",        user.email != null ? user.email : "",
-    "phone",        user.phone != null ? user.phone : "",
-    "profileImage", user.profileImage!= null
-    ? user.profileImage: ""
+    "username", user.username,
+    "email", user.email != null ? user.email : "",
+    "phone", user.phone != null ? user.phone : "",
+    "profileImage", user.profileImage != null
+    ? user.profileImage : ""
     )
     ).build();
     }
@@ -333,6 +333,77 @@ public Response profileUpload(
                 .seeOther(URI.create("/profile?error=upload_fail"))
                 .build();
     }
+}
+
+@POST
+@Path("/profile/update")
+@Transactional
+@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+public Response profileUpdate(
+        @FormParam("email") String email,
+        @FormParam("phone") String phone) {
+
+    String loginUser = context.session().get("loginUser");
+
+    if (loginUser == null) {
+        return Response
+                .seeOther(URI.create("/login"))
+                .build();
+    }
+
+    User found = User.findByEmail(email);
+
+    if (found != null && !found.username.equals(loginUser)) {
+        return Response
+                .seeOther(URI.create("/profile?error=duplicate_email"))
+                .build();
+    }
+
+    User user = User.findByUsername(loginUser);
+
+    user.email = email;
+    user.phone = phone;
+
+    return Response
+            .seeOther(URI.create("/profile?success=updated"))
+            .build();
+}
+
+@POST
+@Path("/profile/password")
+@Transactional
+@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+public Response profilePassword(
+        @FormParam("currentPassword") String currentPassword,
+        @FormParam("newPassword") String newPassword) {
+
+    String loginUser = context.session().get("loginUser");
+
+    if (loginUser == null) {
+        return Response
+                .seeOther(URI.create("/login"))
+                .build();
+    }
+
+    User user = User.findByUsername(loginUser);
+
+    if (user == null) {
+        return Response
+                .seeOther(URI.create("/login"))
+                .build();
+    }
+
+    if (user.password == null || !user.password.equals(currentPassword)) {
+        return Response
+                .seeOther(URI.create("/profile?error=wrong_password"))
+                .build();
+    }
+
+    user.password = newPassword;
+
+    return Response
+            .seeOther(URI.create("/profile?success=password_changed"))
+            .build();
 }
 }
 

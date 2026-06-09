@@ -125,29 +125,28 @@ function performSearch(query) {
         `;
     } else {
             champList.innerHTML = champResults.map(c => `
-        <div class="search-result-card d-flex align-items-center p-0 mb-3 overflow-hidden"
-            style="border: 1px solid #ddd; border-radius: 8px; background: #fff; cursor:pointer;"
-            
-            data-bs-toggle="modal"
-            data-bs-target="#${c.modalId}">
-            
-            <img src="${c.img}" alt="${c.name}" 
-                style="width: 80px; height: 80px; object-fit: cover;"
-                onerror="this.src='https://via.placeholder.com/80'">
-                
-            <div class="p-3">
-                <div style="font-weight:700; font-size:1rem; color:#111;">
-                    ${c.name}
-                    <span style="color:#888; font-size:0.85rem;">(${c.engName})</span>
-                </div>
-                <div style="color:#555; font-size:0.9rem; margin-top:4px;">
-                    역할: ${c.role} &nbsp;|&nbsp;
-                    라인: ${c.lane} &nbsp;|&nbsp;
-                    난이도: ${c.difficulty}
-                </div>
+    <div class="search-result-card d-flex align-items-center p-0 mb-3 overflow-hidden"
+         style="border: 1px solid #ddd; border-radius: 8px; background: #fff; cursor:pointer;"
+         data-bs-toggle="modal"
+         data-bs-target="#${c.modalId}">
+
+        <img src="${c.img}" alt="${c.name}"
+             style="width: 80px; height: 80px; object-fit: cover;"
+             onerror="this.src='https://via.placeholder.com/80'">
+
+        <div class="p-3">
+            <div style="font-weight:700; font-size:1rem; color:#111;">
+                ${c.name}
+                <span style="color:#888; font-size:0.85rem;">(${c.engName})</span>
+            </div>
+            <div style="color:#555; font-size:0.9rem; margin-top:4px;">
+                역할: ${c.role} &nbsp;|&nbsp;
+                라인: ${c.lane} &nbsp;|&nbsp;
+                난이도: ${c.difficulty}
             </div>
         </div>
-    `).join('');
+    </div>
+`).join('');
     }
 
     // 모달 열기 함수
