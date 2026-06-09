@@ -174,6 +174,12 @@
 #### 💬 느낀점
 > 웹 서비스에서 가장 기본적이면서도 중요한 보안의 첫걸음인 로그인 시스템을 직접 다루어보며 웹 서버가 유저의 상태를 어떻게 기억하고 유지하는지 심도 있게 이해할 수 있었습니다.
 
+<div align="center">
+<img width="1889" height="1068" alt="image" src="https://github.com/user-attachments/assets/6b4451bb-8666-48d7-904a-afa419f0b717" />
+<img width="1906" height="1067" alt="image" src="https://github.com/user-attachments/assets/2276a57c-8b94-4613-bce0-55e29d0eac38" />
+
+</div>
+
 ---
 
 ### 🔍 11주차: 회원가입 기능 개발
@@ -182,7 +188,7 @@
    - 유저 입력 폼 유효성 검증 및 데이터베이스 계정 객체 신규 데이터 인서트
 
 #### 💬 느낀점
-> 
+> 데이터베이스와 직접 소통하며 유저의 정보를 영구적으로 저장하는 회원가입 기능을 구현하니, 제가 만든 페이지가 단순한 화면을 넘어 '실제 서비스'가 되어가고 있다는 실감이 났습니다. 특히 입력 폼의 유효성 검증 과정을 거치며 사용자의 잘못된 입력을 어떻게 방어해야 하는지 고민해 본 점이 개발자로서의 시야를 넓혀준 것 같습니다.
 
 <div align="center">
   <img width="24%" alt="11주차 스크린샷 1" src="https://github.com/user-attachments/assets/fb8c6587-3b94-438d-bf03-5030b0b78475" />
@@ -203,4 +209,57 @@
 
 <div align="center">
 <img width="1375" height="144" alt="image" src="https://github.com/user-attachments/assets/4bbc8a05-5dc5-49f6-a9fe-6bd5eac27a15" />
+<img width="922" height="979" alt="image" src="https://github.com/user-attachments/assets/170a71d5-402b-4955-9611-57ab4c64658d" />
 </div>
+
+---
+
+### 🔍 13주차: 프로필 페이지 작성
+#### 🛠️ 실습 내용
+1. **로그인 후 화면 상단 네비바에 프로필 구역 추가**
+   - after_login 화면 상단에 프로필 구역 생성 및 상호작용 가능
+2. **프로필 페이지 구성**
+   - 엔드포인트 등록
+   - 사진 추가
+   - 사진 업로드 기능
+   - 로그인 계정의 아이디, 이메일, 연락처 불러오기
+3. **프론트 수정**
+   - 토스트 컨테이네
+   - 사용자명 동적 표시
+#### 💬 느낀점
+> 로그인한 사용자의 정보를 동적으로 불러와 프로필 화면에 반영하는 작업을 통해, 프론트엔드와 백엔드가 데이터를 어떻게 주고받는지 완벽히 이해할 수 있었습니다. 특히 프로필 사진 업로드 기능과 토스트 메시지 등을 구현하며 사용자 경험(UX)을 고려한 인터페이스 구성의 중요성을 체감했습니다. 완성된 프로필 페이지를 보니 프로젝트의 최종적인 모습이 그려져 무척 뿌듯합니다.
+
+<div align="center">
+<img width="1919" height="1069" alt="image" src="https://github.com/user-attachments/assets/fa135a82-9637-4446-8010-200e39ef9e3c" />
+<img width="1918" height="1074" alt="image" src="https://github.com/user-attachments/assets/364d461f-2136-4ece-b81a-77b7c891c281" />
+<img width="326" height="200" alt="image" src="https://github.com/user-attachments/assets/3d4169ab-28a8-44f3-bdb7-b1c562152154" />
+<img width="1918" height="1067" alt="image" src="https://github.com/user-attachments/assets/6f0f0951-0a51-4edd-8da5-695cb0ecc589" />
+<img width="599" height="118" alt="image" src="https://github.com/user-attachments/assets/87fea666-db50-4711-ad58-869a449067cd" />
+</div>
+
+---
+
+### 🔍 14주차: 회원정보, 비밀번호 수정 및 주차별 과제
+#### 🛠️ 실습 내용
+1. **개인정보 수정하기**
+   - 개인정보 수정 버튼 생성
+   - 이메일, 연락처 수정칸 생성
+   - 형식에 맞게 입력 시 수정완료 문구 생성
+2. **비밀번호 변경**
+   - 각 칸에 맞는 입력 형식 체크
+3. **주차별 과제**
+   - 다운로드 페이지 등 다크 / 라이트 모드 구현
+   - 로그인 화면 입력값 체크
+   - 로그인 / 업로드 에러
+   - 토스트로 교체하기
+
+<div align="center">
+<img width="1885" height="1062" alt="image" src="https://github.com/user-attachments/assets/6ee33f63-4aa6-4b03-a24d-422c4e769ee1" />
+<img width="522" height="282" alt="image" src="https://github.com/user-attachments/assets/733ec9b9-4e8b-4b9a-8ae1-c53d61ee9044" />
+<img width="531" height="461" alt="image" src="https://github.com/user-attachments/assets/381b555b-c8c7-448d-8a21-3a075fc903e6" />
+<img width="1906" height="988" alt="image" src="https://github.com/user-attachments/assets/873651c7-6d8f-4119-bebe-9dd737c309e5" />
+<img width="1899" height="993" alt="image" src="https://github.com/user-attachments/assets/be5e9209-8862-4e10-bcc8-733111a1c9ed" />
+<img width="470" height="534" alt="image" src="https://github.com/user-attachments/assets/a2b6bb37-b4f6-46fb-b04f-f9a458491336" />
+<img width="1913" height="1074" alt="image" src="https://github.com/user-attachments/assets/e80caca4-3944-4692-ae84-332e329f921a" />   
+</div>
+
