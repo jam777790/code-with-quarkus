@@ -230,3 +230,9 @@
 <img width="1918" height="1067" alt="image" src="https://github.com/user-attachments/assets/6f0f0951-0a51-4edd-8da5-695cb0ecc589" />
 <img width="599" height="118" alt="image" src="https://github.com/user-attachments/assets/87fea666-db50-4711-ad58-869a449067cd" />
 </div>
+
+---
+
+### 🔍 14주차: 회원정보, 비밀번호 수정 및 주차별 과제
+<img width="1899" height="993" alt="image" src="https://github.com/user-attachments/assets/be5e9209-8862-4e10-bcc8-733111a1c9ed" />
+
