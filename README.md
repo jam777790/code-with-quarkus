@@ -1,4 +1,4 @@
-# 🚀 Quarkus 프로젝트 실습 과제
+<img width="1906" height="1067" alt="image" src="https://github.com/user-attachments/assets/4bfb589d-1820-4db0-b407-18af8cbdd188" /># 🚀 Quarkus 프로젝트 실습 과제
 
 <div align="center">
   <img src="https://img.shields.io/badge/Quarkus-4695EB?style=for-the-badge&logo=Quarkus&logoColor=white"/>
@@ -174,6 +174,12 @@
 #### 💬 느낀점
 > 웹 서비스에서 가장 기본적이면서도 중요한 보안의 첫걸음인 로그인 시스템을 직접 다루어보며 웹 서버가 유저의 상태를 어떻게 기억하고 유지하는지 심도 있게 이해할 수 있었습니다.
 
+<div align="center">
+<img width="1889" height="1068" alt="image" src="https://github.com/user-attachments/assets/6b4451bb-8666-48d7-904a-afa419f0b717" />
+<img width="1906" height="1067" alt="image" src="https://github.com/user-attachments/assets/2276a57c-8b94-4613-bce0-55e29d0eac38" />
+
+</div>
+
 ---
 
 ### 🔍 11주차: 회원가입 기능 개발
@@ -234,5 +240,26 @@
 ---
 
 ### 🔍 14주차: 회원정보, 비밀번호 수정 및 주차별 과제
+#### 🛠️ 실습 내용
+1. **개인정보 수정하기**
+   - 개인정보 수정 버튼 생성
+   - 이메일, 연락처 수정칸 생성
+   - 형식에 맞게 입력 시 수정완료 문구 생성
+2. **비밀번호 변경**
+   - 각 칸에 맞는 입력 형식 체크
+3. **주차별 과제**
+   - 다운로드 페이지 등 다크 / 라이트 모드 구현
+   - 로그인 화면 입력값 체크
+   - 로그인 / 업로드 에러
+   - 토스트로 교체하기
+
+<div align="center">
+<img width="1885" height="1062" alt="image" src="https://github.com/user-attachments/assets/6ee33f63-4aa6-4b03-a24d-422c4e769ee1" />
+<img width="522" height="282" alt="image" src="https://github.com/user-attachments/assets/733ec9b9-4e8b-4b9a-8ae1-c53d61ee9044" />
+<img width="531" height="461" alt="image" src="https://github.com/user-attachments/assets/381b555b-c8c7-448d-8a21-3a075fc903e6" />
+<img width="1906" height="988" alt="image" src="https://github.com/user-attachments/assets/873651c7-6d8f-4119-bebe-9dd737c309e5" />
+<img width="470" height="534" alt="image" src="https://github.com/user-attachments/assets/a2b6bb37-b4f6-46fb-b04f-f9a458491336" />
+<img width="1913" height="1074" alt="image" src="https://github.com/user-attachments/assets/e80caca4-3944-4692-ae84-332e329f921a" />   
 <img width="1899" height="993" alt="image" src="https://github.com/user-attachments/assets/be5e9209-8862-4e10-bcc8-733111a1c9ed" />
+</div>
 
