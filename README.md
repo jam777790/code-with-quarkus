@@ -1,4 +1,4 @@
-<img width="1906" height="1067" alt="image" src="https://github.com/user-attachments/assets/4bfb589d-1820-4db0-b407-18af8cbdd188" /># 🚀 Quarkus 프로젝트 실습 과제
+# 🚀 Quarkus 프로젝트 실습 과제
 
 <div align="center">
   <img src="https://img.shields.io/badge/Quarkus-4695EB?style=for-the-badge&logo=Quarkus&logoColor=white"/>
